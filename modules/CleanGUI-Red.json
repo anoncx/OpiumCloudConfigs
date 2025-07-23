@@ -1,0 +1,257 @@
+{
+  "modules": [
+    {
+      "name": "BreakPrediction",
+      "enabled": false,
+      "settings": {
+        "speed": 1.0,
+        "remove_after": 0,
+        "local_sync": true,
+        "assume_best": true
+      }
+    },
+    {
+      "name": "ClickGUI",
+      "enabled": false,
+      "settings": {
+        "positioning": "Center",
+        "description_pos": "BR",
+        "snow": true,
+        "search_bar": false,
+        "animation_type": "SLIDE",
+        "sybau_narrator": true,
+        "hover_animation": false,
+        "popup_animation": false,
+        "scrollbar_width": 2.0,
+        "module_height": 15,
+        "module_side_spacing": 1,
+        "module_roundness": 1,
+        "setting_indent": 3,
+        "indent_line_": true,
+        "background_roundness": 1,
+        "bool_pos": "RIGHT",
+        "group_background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 30,
+            "g": 30,
+            "b": 35
+          }
+        },
+        "setting_background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 127,
+            "r": 25,
+            "g": 25,
+            "b": 30
+          }
+        },
+        "selection": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 100,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "slider": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "scrollbar": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "borders": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "enabled_state": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "disabled_state": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 40,
+            "g": 40,
+            "b": 45
+          }
+        },
+        "checkbox_border": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "checkbox_fill": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 180,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "indent_guide": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 150,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "enabled_outline": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        }
+      }
+    },
+    {
+      "name": "Colors",
+      "enabled": false,
+      "settings": {
+        "theme_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        }
+      }
+    },
+    {
+      "name": "ConfigAutoSaver",
+      "enabled": true,
+      "settings": {
+        "save_interval": 500
+      }
+    },
+    {
+      "name": "DiscordRPC",
+      "enabled": true,
+      "settings": {
+        "update_interval": 50,
+        "mode": "Custom",
+        "state": "Doing Ur Mom",
+        "details": "Opium Beta",
+        "image_key": "Music",
+        "image_text": "Music"
+      }
+    },
+    {
+      "name": "ExampleModule",
+      "enabled": false,
+      "settings": {
+        "ghost_color": {
+          "rainbow": true,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 125,
+            "r": 204,
+            "g": 41,
+            "b": 170
+          }
+        }
+      }
+    },
+    {
+      "name": "JumpCircle",
+      "enabled": false,
+      "settings": {
+        "rotate_speed": 0.5,
+        "circle_scale": 0.5,
+        "circle_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 115,
+            "g": 22,
+            "b": 22
+          }
+        },
+        "bounce": true,
+        "bounce_height": 0.5,
+        "bounce_speed": 0.6
+      }
+    },
+    {
+      "name": "Rotations",
+      "enabled": false,
+      "settings": {
+        "mode": "YawOnly",
+        "random_yaw": 2,
+        "random_pitch": 0,
+        "keep_ticks": 2,
+        "render": "Head",
+        "yaw_step": 180,
+        "lerp_step": 1.0,
+        "multi_mode": "NCP"
+      }
+    }
+  ]
+}
