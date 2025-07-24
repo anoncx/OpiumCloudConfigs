@@ -172,7 +172,10 @@
       "name": "BreakPrediction",
       "enabled": false,
       "settings": {
-        "speed": 1.0
+        "speed": 1.0,
+        "remove_after": 0,
+        "local_sync": true,
+        "assume_best": true
       }
     },
     {
@@ -230,25 +233,30 @@
       "name": "ClickGUI",
       "enabled": false,
       "settings": {
-        "side_margin": 10,
-        "panel_width": 13,
-        "category_spacing": 3,
+        "side_margin": 11,
+        "panel_width": 10,
+        "category_spacing": 2,
         "description_pos": "BL",
-        "blur": "Category",
+        "blur": "None",
+        "blur_size": 32,
+        "blur_sigma": 15,
+        "msaa_samples": 6,
         "sybau_narrator": true,
         "animated_hotbar": true,
-        "title_height": 15,
+        "title_height": 14,
         "scrollbar_width": 0.0,
+        "text_padding": 3,
         "render_icons": false,
         "outline_enabled": false,
         "outline_width": 0.4,
         "animation_factor": 0.2,
-        "module_height": 14,
-        "module_side_spacing": 4,
-        "module_glow": true,
-        "glow_radius": 20,
-        "horizontal_padding": 3.2,
-        "vertical_padding": 6.3,
+        "module_height": 15,
+        "module_spacing": 0,
+        "module_side_spacing": 0,
+        "module_roundness": 0,
+        "glow_radius": 2,
+        "horizontal_padding": 0.0,
+        "vertical_padding": 4.4,
         "glow_color": {
           "rainbow": false,
           "noAlphaSync": false,
@@ -313,15 +321,26 @@
             "b": 125
           }
         },
+        "selection": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 96,
+            "r": 161,
+            "g": 55,
+            "b": 222
+          }
+        },
         "slider": {
           "rainbow": false,
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 255,
-            "r": 108,
-            "g": 161,
-            "b": 178
+            "a": 108,
+            "r": 155,
+            "g": 55,
+            "b": 222
           }
         },
         "header": {
@@ -330,9 +349,9 @@
           "sync": false,
           "value": {
             "a": 255,
-            "r": 134,
-            "g": 108,
-            "b": 178
+            "r": 155,
+            "g": 55,
+            "b": 222
           }
         },
         "scrollbar": {
@@ -362,10 +381,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 80,
-            "r": 152,
-            "g": 130,
-            "b": 206
+            "a": 54,
+            "r": 160,
+            "g": 160,
+            "b": 160
           }
         },
         "enabled_text": {
@@ -374,9 +393,9 @@
           "sync": false,
           "value": {
             "a": 255,
-            "r": 179,
-            "g": 135,
-            "b": 231
+            "r": 255,
+            "g": 255,
+            "b": 255
           }
         },
         "disabled_state": {
@@ -395,10 +414,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 160,
-            "r": 140,
-            "g": 140,
-            "b": 145
+            "a": 168,
+            "r": 255,
+            "g": 255,
+            "b": 255
           }
         },
         "checkbox_border": {
@@ -406,10 +425,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 198,
-            "r": 102,
-            "g": 138,
-            "b": 150
+            "a": 255,
+            "r": 161,
+            "g": 55,
+            "b": 222
           }
         },
         "checkbox_fill": {
@@ -418,9 +437,9 @@
           "sync": false,
           "value": {
             "a": 255,
-            "r": 108,
-            "g": 161,
-            "b": 178
+            "r": 161,
+            "g": 55,
+            "b": 222
           }
         },
         "indent_guide": {
@@ -432,6 +451,17 @@
             "r": 81,
             "g": 135,
             "b": 177
+          }
+        },
+        "enabled_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 161,
+            "g": 55,
+            "b": 222
           }
         }
       }
@@ -569,9 +599,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
+            "r": 201,
             "g": 204,
-            "b": 164
+            "b": 41
           }
         }
       }
@@ -625,7 +655,6 @@
       "name": "Fly",
       "enabled": false,
       "settings": {
-        "down_mul": 1.0,
         "clip_range": 54
       }
     },
@@ -633,7 +662,7 @@
       "name": "Font",
       "enabled": false,
       "settings": {
-        "shadow": false,
+        "outline": false,
         "overwrite_mc": true
       }
     },
@@ -650,6 +679,13 @@
       "horizontalAlignment": "LEFT",
       "verticalAlignment": "BOTTOM",
       "settings": {}
+    },
+    {
+      "name": "HitMarker",
+      "enabled": false,
+      "settings": {
+        "gap": 10.0
+      }
     },
     {
       "name": "Hud",
@@ -758,6 +794,17 @@
       "settings": {
         "rotate_speed": 1.8,
         "circle_scale": 0.7,
+        "circle_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 82,
+            "g": 149,
+            "b": 161
+          }
+        },
         "bounce": true,
         "bounce_height": 1.0,
         "bounce_speed": 0.6
@@ -881,11 +928,14 @@
       "name": "Rotations",
       "enabled": false,
       "settings": {
+        "mode": "YawOnly",
         "random_yaw": 0,
         "random_pitch": 0,
         "keep_ticks": 2,
         "render": "Head",
+        "yaw_step": 180,
         "lerp_step": 0.5,
+        "multi_mode": "NCP",
         "allowed_diff": 10
       }
     },
