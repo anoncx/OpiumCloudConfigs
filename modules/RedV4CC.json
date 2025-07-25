@@ -124,7 +124,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "health_factor": 2.0,
         "max_health": 11.0,
@@ -137,7 +137,6 @@
         "break_range": 6.0,
         "max_attack": 3,
         "break_speed": 40.0,
-        "ignore_naked": true,
         "anti-quiver": true,
         "fill": {
           "rainbow": false,
@@ -226,7 +225,8 @@
       "settings": {
         "speed": 1.0,
         "remove_after": 0,
-        "local_sync": true
+        "local_sync": true,
+        "assume_best": true
       }
     },
     {
@@ -309,8 +309,7 @@
       "enabled": true,
       "settings": {
         "y_offset": 0.0,
-        "mode": "CUSTOM",
-        "outgoing_language": "ru"
+        "mode": "CUSTOM"
       }
     },
     {
@@ -344,7 +343,7 @@
     },
     {
       "name": "ClickGUI",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "positioning": "Center",
         "description_pos": "BR",
@@ -515,6 +514,28 @@
             "g": 22,
             "b": 22
           }
+        },
+        "info": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 110,
+            "g": 2,
+            "b": 2
+          }
+        },
+        "enable": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
         }
       }
     },
@@ -674,7 +695,7 @@
           "value": {
             "a": 125,
             "r": 41,
-            "g": 46,
+            "g": 58,
             "b": 204
           }
         }
@@ -695,6 +716,11 @@
       "y": 14.0,
       "horizontalAlignment": "LEFT",
       "verticalAlignment": "TOP",
+      "settings": {}
+    },
+    {
+      "name": "FakePlayer",
+      "enabled": true,
       "settings": {}
     },
     {
@@ -935,11 +961,6 @@
       }
     },
     {
-      "name": "KillAura",
-      "enabled": true,
-      "settings": {}
-    },
-    {
       "name": "Logger",
       "enabled": true,
       "settings": {
@@ -964,10 +985,10 @@
     {
       "name": "MediaPlayer",
       "enabled": true,
-      "x": 50.0,
-      "y": -11.5,
+      "x": 0.0,
+      "y": 38.0,
       "horizontalAlignment": "RIGHT",
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "BOTTOM",
       "settings": {
         "prefix": ""
       }
@@ -1144,6 +1165,7 @@
       "name": "Rotations",
       "enabled": false,
       "settings": {
+        "mode": "YawOnly",
         "random_yaw": 2,
         "random_pitch": 0,
         "keep_ticks": 0,
@@ -1354,8 +1376,9 @@
         "swing_speed": 20,
         "main_progress": 0.0,
         "off_progress": 0.0,
-        "right_y_degrees": -74.2,
-        "right_z_degrees": 311.9
+        "right_x_degrees": 2.7,
+        "right_y_degrees": -58.9,
+        "right_z_degrees": -0.7
       }
     },
     {
