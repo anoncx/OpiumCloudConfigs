@@ -1,0 +1,31 @@
+{
+  "modules": [
+    {
+      "name": "ClickGUI",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "ConfigManager",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "ExampleModule",
+      "enabled": false,
+      "settings": {
+        "ghost_color": {
+          "rainbow": true,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 125,
+            "r": 41,
+            "g": 165,
+            "b": 204
+          }
+        }
+      }
+    }
+  ]
+}
