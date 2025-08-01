@@ -591,9 +591,9 @@
         "update_interval": 25,
         "custom_app_id": "1400734730567286995",
         "mode": "Custom",
-        "state": "Cooking Rn",
+        "state": "FWEAH",
         "details": "Type Shit",
-        "image_key": "https://media1.tenor.com/m/-jWTnmLRKksAAAAd/playboi-carti-2024.gif",
+        "image_key": "https://media1.tenor.com/m/-jWTnmLRKksAAAAC/playboi-carti-2024.gif",
         "small_image_key": ""
       }
     },
@@ -714,9 +714,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 116,
-            "b": 204
+            "r": 204,
+            "g": 41,
+            "b": 93
           }
         }
       }
@@ -1532,7 +1532,7 @@
 ,
   "server": "Visual Config"
 ,
-  "pingRange": "0 - 500"
+  "pingRange": ""
 ,
   "uploader": "OpiumDev__7375"
 }
