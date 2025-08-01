@@ -1530,9 +1530,9 @@
     }
   ]
 ,
-  "server": "cxtestserver.cx"
+  "server": "cxtestserver.de"
 ,
-  "pingRange": "69"
+  "pingRange": "420"
 ,
   "uploader": "OpiumDev__5027"
 }
