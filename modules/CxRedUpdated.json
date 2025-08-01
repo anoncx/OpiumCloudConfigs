@@ -1532,7 +1532,7 @@
 ,
   "server": "Visual Config"
 ,
-  "pingRange": ""
+  "pingRange": "0 - 0"
 ,
   "uploader": "OpiumDev__7375"
 }
