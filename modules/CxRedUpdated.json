@@ -588,13 +588,15 @@
       "name": "DiscordRPC",
       "enabled": true,
       "settings": {
-        "update_interval": 25,
+        "update_interval": 54,
         "custom_app_id": "1400734730567286995",
         "mode": "Custom",
-        "state": "FWEAH",
+        "state": "Im Coding rn",
         "details": "Type Shit",
         "image_key": "https://media1.tenor.com/m/-jWTnmLRKksAAAAC/playboi-carti-2024.gif",
-        "small_image_key": ""
+        "image_text": "Cxiy On Top",
+        "small_image_key": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2lmYms4Z3l6eWJ6bmY2d2lja3NodWdobzJ3MWhjcTNmdm9wcnZ0ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eJoXShW5k0fTA6up95/giphy.gif",
+        "small_image_text": "999"
       }
     },
     {
@@ -715,8 +717,8 @@
           "value": {
             "a": 125,
             "r": 204,
-            "g": 41,
-            "b": 93
+            "g": 92,
+            "b": 41
           }
         }
       }
@@ -1241,6 +1243,7 @@
         "random_yaw": 2,
         "random_pitch": 0,
         "keep_ticks": 0,
+        "render": "Head",
         "yaw_step": 180,
         "lerp_step": 0.2,
         "multi_mode": "NCP",
