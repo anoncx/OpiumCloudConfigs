@@ -1,0 +1,726 @@
+{
+  "modules": [
+    {
+      "name": "Animations",
+      "enabled": false,
+      "settings": {
+        "roundness": 4.0,
+        "enable_animation": false,
+        "enable_snowflakes": false,
+        "enable_blur": false
+      }
+    },
+    {
+      "name": "ArmorHUD",
+      "enabled": false,
+      "x": 48.0,
+      "y": 28.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "BOTTOM",
+      "settings": {}
+    },
+    {
+      "name": "AutoAnchor",
+      "enabled": false,
+      "settings": {
+        "max_self": 4,
+        "min": 5,
+        "target_mode": "Damage",
+        "exclude_friends": false,
+        "target": 20,
+        "scan": 8,
+        "interact": 6.0,
+        "reach": 1,
+        "self": 1,
+        "extrapolate_target": false,
+        "no_double_switch": true,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 100,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 250,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "AutoArmor",
+      "enabled": false,
+      "settings": {
+        "elytra_priority": true,
+        "delay": 1,
+        "mindurability": 1
+      }
+    },
+    {
+      "name": "AutoCrystal",
+      "enabled": false,
+      "settings": {
+        "min_damage": 8,
+        "max_damage": 10,
+        "ignore_if_pop": true,
+        "health_factor": 2.5,
+        "max_health": 6.0,
+        "armor_breaker": true,
+        "durability": 15.0,
+        "assume_broken": true,
+        "broken_ticks": 1,
+        "place_range": 5.2,
+        "place_wall_range": 6.0,
+        "place_speed": 40.0,
+        "scan_range": 20,
+        "scan_range_y": 6,
+        "anti_weakness": "Normal",
+        "break_range": 5.2,
+        "break_wall_range": 5.2,
+        "break_speed": 40.0,
+        "anti-quiver": true,
+        "anti-sand": true,
+        "sand_priority": false,
+        "while_eating": false,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 80,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "fade_time": 350,
+        "show_count": true,
+        "damage_mode": "Full",
+        "target_range": 20,
+        "prediction_type": "AVERAGE",
+        "count_range": 10,
+        "packet_count": 10,
+        "fast_break": true,
+        "instant_replace": true,
+        "no_place_limit": true,
+        "no_break_limit": true,
+        "max_wait": 1,
+        "break_timeout": 0,
+        "raycast_mode": "VeryAccurate",
+        "raycast_future": true
+      }
+    },
+    {
+      "name": "AutoSand",
+      "enabled": false,
+      "settings": {
+        "target_range": 4
+      }
+    },
+    {
+      "name": "AutoTrap",
+      "enabled": false,
+      "settings": {
+        "predict": 1,
+        "block_reach": 6.0,
+        "blocks/t": 8,
+        "place_delay": 0,
+        "place_support": true,
+        "target_range": 8.0,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 80,
+            "r": 37,
+            "g": 37,
+            "b": 37
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "render_mode": "Wireframe"
+      }
+    },
+    {
+      "name": "BreakPrediction",
+      "enabled": false,
+      "settings": {
+        "speed": 1.0,
+        "remove_after": 0,
+        "local_sync": true,
+        "assume_best": true
+      }
+    },
+    {
+      "name": "Chams",
+      "enabled": false,
+      "settings": {
+        "glow": false,
+        "render_mode": "Pulsing",
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "friend_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 0,
+            "g": 255,
+            "b": 0
+          }
+        },
+        "player_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 67,
+            "g": 67,
+            "b": 67
+          }
+        }
+      }
+    },
+    {
+      "name": "ChatHUD",
+      "enabled": false,
+      "x": 0.0,
+      "y": 0.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "scale": 1.0,
+        "width": 320,
+        "name_highlight": false,
+        "highlight_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 237,
+            "g": 230,
+            "b": 230
+          }
+        },
+        "animations": false,
+        "scrolling": false
+      }
+    },
+    {
+      "name": "ClickGUI",
+      "enabled": false,
+      "settings": {
+        "blur": "None",
+        "open_animation": false,
+        "animation_type": "NONE",
+        "sybau_narrator": true,
+        "hover_animation": false,
+        "popup_animation": false,
+        "title_height": 18,
+        "scrollbar_width": 2.6,
+        "text_padding": 4,
+        "icon_size": 13,
+        "outline_width": 1.4,
+        "animation_factor": 0.2,
+        "module_height": 21,
+        "module_spacing": 3,
+        "setting_height": 16,
+        "setting_spacing": 3,
+        "setting_indent": 2,
+        "line_width": 1.04,
+        "background_roundness": 0,
+        "slider": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 200,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "scrollbar_track": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 150,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "enabled_state": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 200,
+            "r": 60,
+            "g": 255,
+            "b": 0
+          }
+        },
+        "enabled_text": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "disabled_state": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 200,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "disabled_text": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        }
+      }
+    },
+    {
+      "name": "Colors",
+      "enabled": false,
+      "settings": {
+        "theme_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 101,
+            "g": 101,
+            "b": 101
+          }
+        },
+        "info": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 115,
+            "g": 115,
+            "b": 115
+          }
+        }
+      }
+    },
+    {
+      "name": "CrawlTrap",
+      "enabled": false,
+      "settings": {
+        "predict": 1,
+        "block_reach": 5.2
+      }
+    },
+    {
+      "name": "CrystalModify",
+      "enabled": false,
+      "settings": {
+        "rotation_speed": 0.3,
+        "up-down_height": 0.0
+      }
+    },
+    {
+      "name": "DiscordRPC",
+      "enabled": false,
+      "settings": {
+        "update_interval": 20
+      }
+    },
+    {
+      "name": "ElytraFly",
+      "enabled": false,
+      "settings": {
+        "mode": "CONTROL",
+        "grim": true,
+        "factor": 4.1,
+        "max_boost": 3.11,
+        "speed": 4.0,
+        "accel_per_tick": 0.42
+      }
+    },
+    {
+      "name": "FastUse",
+      "enabled": true,
+      "settings": {
+        "blocks": false
+      }
+    },
+    {
+      "name": "HitMarker",
+      "enabled": false,
+      "settings": {
+        "animation": "None"
+      }
+    },
+    {
+      "name": "HoleESP",
+      "enabled": true,
+      "settings": {
+        "update_delay": 10,
+        "range_xz": 20,
+        "range_y": 6,
+        "obsidian": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 88,
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "bedrock": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 28,
+            "r": 0,
+            "g": 255,
+            "b": 1
+          }
+        },
+        "obsidian_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 34,
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "bedrock_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 89,
+            "r": 105,
+            "g": 217,
+            "b": 2
+          }
+        },
+        "boxheight": 1.0,
+        "animation_speed": 5.0
+      }
+    },
+    {
+      "name": "HoleFill",
+      "enabled": false,
+      "settings": {
+        "mode": "All",
+        "hole_range_h": 4,
+        "hole_range_v": 6,
+        "no_place_range": 3.0,
+        "block_reach": 5.0,
+        "blocks/t": 6,
+        "place_delay": 25,
+        "block": "Obsidian",
+        "prio_enderchest": false,
+        "target_range": 10.0,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 80,
+            "r": 130,
+            "g": 130,
+            "b": 130
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 95,
+            "g": 95,
+            "b": 95
+          }
+        },
+        "render_mode": "Wireframe"
+      }
+    },
+    {
+      "name": "HoleRefill",
+      "enabled": false,
+      "settings": {
+        "range": 4.0,
+        "allow_air_place": true
+      }
+    },
+    {
+      "name": "Hud",
+      "enabled": false,
+      "settings": {
+        "render": false,
+        "outline_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "blur": false,
+        "outline_width": 0.3,
+        "hover_animation": false
+      }
+    },
+    {
+      "name": "InstantStrafe",
+      "enabled": true,
+      "settings": {
+        "speed": 1.0,
+        "in_air": true
+      }
+    },
+    {
+      "name": "InventoryControl",
+      "enabled": false,
+      "settings": {
+        "movement": false
+      }
+    },
+    {
+      "name": "JumpCircle",
+      "enabled": false,
+      "settings": {
+        "rotate_speed": 0.5,
+        "circle_scale": 0.5,
+        "circle_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 101,
+            "g": 101,
+            "b": 101
+          }
+        },
+        "bounce": true,
+        "bounce_height": 0.5,
+        "bounce_speed": 0.6
+      }
+    },
+    {
+      "name": "KillAura",
+      "enabled": false,
+      "settings": {
+        "force_sword": true,
+        "range": 4.5,
+        "rotation_mode": "Always",
+        "target_mode": "Damage",
+        "target_hostiles": true,
+        "target_neutrals": true,
+        "target_passives": true,
+        "exclude_friends": false
+      }
+    },
+    {
+      "name": "NoSlow",
+      "enabled": true,
+      "settings": {
+        "wall_push": true
+      }
+    },
+    {
+      "name": "Offhand",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "PacketExp",
+      "enabled": false,
+      "settings": {
+        "tick_max": 5.4,
+        "auto_disable": false
+      }
+    },
+    {
+      "name": "PacketMine",
+      "enabled": false,
+      "settings": {
+        "range": 6.0,
+        "swap": "Silent",
+        "rotate": false,
+        "grim": true,
+        "animation": "Expand",
+        "color": "Static"
+      }
+    },
+    {
+      "name": "Rotations",
+      "enabled": false,
+      "settings": {
+        "random_yaw": 0,
+        "random_pitch": 0,
+        "keep_ticks": 0,
+        "render": "None",
+        "yaw_step": 180,
+        "lerp_step": 1.0,
+        "multi_mode": "NCP",
+        "allowed_diff": 1
+      }
+    },
+    {
+      "name": "SelfTrap",
+      "enabled": false,
+      "settings": {
+        "block_reach": 6.0,
+        "blocks/t": 10,
+        "place_delay": 0,
+        "feet": true,
+        "only_in_hole": false
+      }
+    },
+    {
+      "name": "Spammer",
+      "enabled": false,
+      "settings": {
+        "mode": "AutoEZ"
+      }
+    },
+    {
+      "name": "Speed",
+      "enabled": false,
+      "settings": {
+        "use_timer": true,
+        "timer_multiplier": 10.0,
+        "speed_in_water": true,
+        "while_sneaking": true
+      }
+    },
+    {
+      "name": "Step",
+      "enabled": false,
+      "settings": {
+        "height": 1.0
+      }
+    },
+    {
+      "name": "Stuck",
+      "enabled": false,
+      "settings": {
+        "mode": "Velocity"
+      }
+    },
+    {
+      "name": "Surround",
+      "enabled": false,
+      "settings": {
+        "place_mode": "Vanilla",
+        "center": "TP",
+        "swap_mode": "NORMAL",
+        "await": false,
+        "blocks/cycle": 20,
+        "delay_(ms)": 0,
+        "place_range": 6.0,
+        "crystals/cycle": 2
+      }
+    },
+    {
+      "name": "TrueItemCount",
+      "enabled": true,
+      "settings": {
+        "no_unstackable": true
+      }
+    },
+    {
+      "name": "ValidBlockHighlight",
+      "enabled": false,
+      "settings": {
+        "place": true
+      }
+    },
+    {
+      "name": "ViewModel",
+      "enabled": false,
+      "settings": {
+        "swing_speed": 2
+      }
+    }
+  ]
+,
+  "server": "0b0t"
+,
+  "pingRange": "180 - 210"
+,
+  "uploader": "PlayingCow61105"
+}
