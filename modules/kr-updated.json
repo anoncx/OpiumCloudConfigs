@@ -3,13 +3,14 @@
     {
       "name": "ArmorHUD",
       "enabled": true,
-      "x": 48.0,
-      "y": 34.0,
+      "x": 50.0,
+      "y": 35.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "BOTTOM",
       "settings": {
         "main_hand": false,
-        "off_hand": false
+        "off_hand": false,
+        "size": 1.0
       }
     },
     {
@@ -26,9 +27,9 @@
           "sync": true,
           "value": {
             "a": 204,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "second_color": {
@@ -37,19 +38,20 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "line_spacing": 1,
         "only_bound": true,
-        "animation_length": 0
+        "animation_length": 0,
+        "vertical_anim": true
       }
     },
     {
       "name": "AutoArmor",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "elytra_priority": true,
         "toggle_priority": 72,
@@ -66,19 +68,18 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
         "ignore_if_pop": true,
         "min_ratio": 1.0,
         "no_suicide": false,
-        "health_factor": 12.0,
-        "max_health": 12.0,
+        "health_factor": 2.0,
+        "max_health": 5.0,
         "armor_breaker": true,
-        "durability": 12.0,
+        "durability": 10.0,
         "assume_broken": true,
-        "broken_ticks": 3,
         "swap_mode": "Silent",
         "place_range": 5.2,
         "place_speed": 20.0,
@@ -88,16 +89,15 @@
         "max_attack": 3,
         "break_speed": 20.0,
         "swing_break": false,
-        "anti-quiver": true,
         "fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
             "a": 72,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "outline": {
@@ -106,15 +106,15 @@
           "sync": true,
           "value": {
             "a": 125,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "fade_time": 300,
         "speed": 0.1,
         "render_text": false,
-        "target_range": 8,
+        "target_range": 16,
         "prediction": 3,
         "prediction_type": "AVERAGE",
         "predict_self": true,
@@ -122,12 +122,13 @@
         "no_eat_swap": false,
         "swap_health": 8.0,
         "id_predict": true,
-        "packet_count": 3,
+        "packet_count": 6,
         "fast_break": true,
         "instant_replace": true,
         "no_place_limit": true,
-        "max_wait": 150,
-        "break_timeout": 150,
+        "no_break_limit": true,
+        "max_wait": 1,
+        "break_timeout": 0,
         "raycast_mode": "Accurate"
       }
     },
@@ -139,7 +140,9 @@
     {
       "name": "AutoReplenish",
       "enabled": true,
-      "settings": {}
+      "settings": {
+        "delay": 0
+      }
     },
     {
       "name": "AutoRespawn",
@@ -154,7 +157,6 @@
       "name": "AutoTrap",
       "enabled": false,
       "settings": {
-        "swap": "SILENT",
         "block_reach": 4.5,
         "blocks/t": 4,
         "place_support": true,
@@ -166,9 +168,9 @@
           "sync": true,
           "value": {
             "a": 80,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "outline": {
@@ -177,19 +179,19 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
     },
     {
       "name": "Blocker",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "range": 5.2,
-        "break_progress_threshold": 0.5
+        "break_progress_threshold": 1.0
       }
     },
     {
@@ -197,11 +199,10 @@
       "enabled": true,
       "settings": {
         "scale": 7.0,
-        "self": true,
         "ping": false,
-        "show_armor": false,
-        "armor_scale": 1.5,
-        "armor_offset": 2.0,
+        "armor_scale": 2.0,
+        "armor_spacing": 5.0,
+        "armor_offset": -1.0,
         "update_interval": 50
       }
     },
@@ -227,9 +228,9 @@
           "sync": true,
           "value": {
             "a": 80,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "outline": {
@@ -238,9 +239,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "start_fill": {
@@ -249,9 +250,9 @@
           "sync": true,
           "value": {
             "a": 80,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "start_outline": {
@@ -260,9 +261,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "end_fill": {
@@ -271,9 +272,9 @@
           "sync": true,
           "value": {
             "a": 80,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "end_outline": {
@@ -282,9 +283,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "show_progress": false
@@ -293,24 +294,24 @@
     {
       "name": "CameraTweaks",
       "enabled": true,
-      "settings": {}
+      "settings": {
+        "distance": 5.0
+      }
     },
     {
       "name": "Chams",
       "enabled": true,
       "settings": {
-        "texture": false,
-        "frame_only": true,
         "render_mode": "Boxes",
         "fill": {
           "rainbow": false,
           "noAlphaSync": false,
-          "sync": true,
+          "sync": false,
           "value": {
-            "a": 97,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 73,
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "friend_color": {
@@ -329,10 +330,10 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 203,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 227,
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "mode": "Textured",
@@ -343,9 +344,9 @@
           "sync": true,
           "value": {
             "a": 124,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
@@ -420,9 +421,9 @@
           "sync": true,
           "value": {
             "a": 100,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "glow_mode": "ENABLED",
@@ -436,12 +437,12 @@
         "background": {
           "rainbow": false,
           "noAlphaSync": true,
-          "sync": true,
+          "sync": false,
           "value": {
-            "a": 57,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 132,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "group_background": {
@@ -450,9 +451,9 @@
           "sync": true,
           "value": {
             "a": 63,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "setting_background": {
@@ -461,9 +462,9 @@
           "sync": true,
           "value": {
             "a": 127,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "selection": {
@@ -483,9 +484,9 @@
           "sync": true,
           "value": {
             "a": 186,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "header": {
@@ -494,9 +495,9 @@
           "sync": true,
           "value": {
             "a": 128,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "main_text": {
@@ -516,9 +517,9 @@
           "sync": true,
           "value": {
             "a": 0,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "scrollbar": {
@@ -527,9 +528,9 @@
           "sync": true,
           "value": {
             "a": 0,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "borders": {
@@ -538,9 +539,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "enabled_state": {
@@ -549,9 +550,9 @@
           "sync": true,
           "value": {
             "a": 163,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "enabled_text": {
@@ -571,9 +572,9 @@
           "sync": true,
           "value": {
             "a": 0,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "disabled_text": {
@@ -604,9 +605,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "indent_guide": {
@@ -615,9 +616,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "enabled_outline": {
@@ -626,9 +627,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "disabled_outline": {
@@ -637,9 +638,9 @@
           "sync": true,
           "value": {
             "a": 0,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "icons": {
@@ -674,9 +675,9 @@
           "sync": false,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "rainbow_speed": 5,
@@ -705,6 +706,11 @@
       }
     },
     {
+      "name": "ConfigAutoSaver",
+      "enabled": true,
+      "settings": {}
+    },
+    {
       "name": "Coordinates",
       "enabled": true,
       "x": 0.0,
@@ -730,16 +736,16 @@
       "name": "DeathEffects",
       "enabled": true,
       "settings": {
-        "particle_style": "Void",
+        "particle_style": "Ethereal",
         "bloom_color": {
           "rainbow": false,
           "noAlphaSync": false,
           "sync": true,
           "value": {
             "a": 180,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "image": "OpiumLogo"
@@ -768,19 +774,27 @@
       }
     },
     {
+      "name": "EntityTrails",
+      "enabled": false,
+      "settings": {
+        "players": false,
+        "self": false
+      }
+    },
+    {
       "name": "Environment",
       "enabled": true,
       "settings": {
         "modify_overworld_sky": true,
         "overworld_sky_color": {
           "rainbow": false,
-          "noAlphaSync": false,
+          "noAlphaSync": true,
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "overworld_fog_color": {
@@ -789,12 +803,12 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
-        "fog_end": 20,
+        "fog_end": 50,
         "do_block_tint": true,
         "block_tint": {
           "rainbow": false,
@@ -802,9 +816,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "custom_time": true,
@@ -816,9 +830,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "custom_totem": true,
@@ -828,9 +842,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "color_2": {
@@ -839,9 +853,9 @@
           "sync": true,
           "value": {
             "a": 51,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "color_mode": "GRADIENT",
@@ -866,9 +880,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
@@ -883,9 +897,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 62,
-            "b": 204
+            "r": 204,
+            "g": 54,
+            "b": 41
           }
         }
       }
@@ -894,7 +908,7 @@
       "name": "FOVModify",
       "enabled": true,
       "settings": {
-        "fov_static": 150
+        "fov_static": 130
       }
     },
     {
@@ -908,11 +922,18 @@
     },
     {
       "name": "FPSLimiter",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "fps": 15,
         "afk": true,
         "afk_delay": 60.0
+      }
+    },
+    {
+      "name": "FakePlayer",
+      "enabled": false,
+      "settings": {
+        "name": "Opiumless"
       }
     },
     {
@@ -990,9 +1011,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "mode": "Circle"
@@ -1056,7 +1077,7 @@
       "enabled": true,
       "settings": {
         "predict": 1,
-        "swap": "SILENT",
+        "swap": "Silent",
         "rotate": true,
         "hole_range_h": 3,
         "block_reach": 4.5,
@@ -1070,7 +1091,7 @@
       "enabled": true,
       "settings": {
         "range": 2.0,
-        "swap": "SILENT",
+        "swap": "Silent",
         "double_delay": 0.0
       }
     },
@@ -1106,9 +1127,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "blur": false
@@ -1154,9 +1175,9 @@
           "sync": true,
           "value": {
             "a": 175,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
@@ -1173,9 +1194,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "bounce": true,
@@ -1228,6 +1249,7 @@
       "name": "Nametags",
       "enabled": false,
       "settings": {
+        "render_background": false,
         "scale": 6.5,
         "blur_background": false,
         "roundness": 0,
@@ -1240,9 +1262,20 @@
           "sync": true,
           "value": {
             "a": 179,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
+          }
+        },
+        "color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "culling": true,
@@ -1250,8 +1283,9 @@
         "self": true,
         "render_ping": false,
         "render_totem_pops": true,
+        "render_opiumcheck": false,
         "armor_scale": 2.5,
-        "armor_height": -3.0,
+        "armor_height": -0.6,
         "durability_position": "INSIDE",
         "durability_mode": "BAR",
         "update_interval": 100,
@@ -1260,7 +1294,7 @@
     },
     {
       "name": "NoMiningTrace",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "onlywhilepick": false
       }
@@ -1269,7 +1303,6 @@
       "name": "NoRender",
       "enabled": true,
       "settings": {
-        "noarmor": true,
         "noportal": true,
         "nopumpkin": true,
         "novignette": true,
@@ -1317,20 +1350,21 @@
       "enabled": true,
       "settings": {
         "range": 5.2,
-        "swap": "AltSilent",
+        "swap": "AlternativeSilent",
         "speed": 1.0,
         "city_only": true,
-        "animation": "Implode",
-        "color": "Custom",
+        "reset_on_switch": false,
+        "animation": "Expand",
+        "color": "Static",
         "fill": {
           "rainbow": false,
           "noAlphaSync": false,
           "sync": true,
           "value": {
             "a": 100,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "outline": {
@@ -1339,9 +1373,9 @@
           "sync": true,
           "value": {
             "a": 205,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
@@ -1412,9 +1446,9 @@
           "sync": true,
           "value": {
             "a": 100,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "glow": true,
@@ -1448,12 +1482,11 @@
         "mode": "YawOnly",
         "random_yaw": 0,
         "random_pitch": 0,
-        "keep_ticks": 3,
+        "keep_ticks": 2,
         "render": "Head",
         "yaw_step": 10,
         "lerp_step": 1.0,
-        "multi_mode": "NCP",
-        "allowed_diff": 15
+        "multi_mode": "NCP"
       }
     },
     {
@@ -1469,9 +1502,9 @@
           "sync": true,
           "value": {
             "a": 79,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "default_outline": {
@@ -1480,21 +1513,21 @@
           "sync": true,
           "value": {
             "a": 128,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
-        "snow_quality": 4.0,
+        "snow_quality": 3.0,
         "snow_fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
             "a": 129,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "glow_color": {
@@ -1503,23 +1536,23 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
-        "bloom_width": 3.0,
-        "bloom_quality": 6.0,
+        "bloom_width": 2.0,
+        "bloom_quality": 5.0,
         "bloom_intensity": 0.2,
         "bloom_fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 64,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 52,
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "bloom_outline": {
@@ -1527,22 +1560,22 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 41,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 28,
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "use_gradient": true,
         "use_two_colors": true,
         "gradient_color_1": {
           "rainbow": false,
-          "noAlphaSync": false,
+          "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 46,
-            "r": 103,
-            "g": 242,
+            "a": 30,
+            "r": 255,
+            "g": 255,
             "b": 255
           }
         },
@@ -1551,13 +1584,18 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 42,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 35,
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "bloom_wave": true,
+        "bloom_wave_speed": 10.0,
+        "bloom_wave_distance": 10.0,
+        "bloom_wave_width": 0.5,
+        "bloom_wave_blur": 0.75,
+        "wave_direction": 360.0,
         "self": true,
         "creatures": false,
         "monsters": false,
@@ -1596,9 +1634,10 @@
       "x": 0.0,
       "y": 0.0,
       "horizontalAlignment": "RIGHT",
-      "verticalAlignment": "BOTTOM",
+      "verticalAlignment": "TOP",
       "settings": {
-        "scale": 0.8
+        "scale": 0.8,
+        "shadow": false
       }
     },
     {
@@ -1632,20 +1671,21 @@
         "delay_(ticks)": 0,
         "delay_(ms)": 0,
         "place_range": 5.2,
-        "priority": "Normal",
+        "priority": "Closest",
         "max_support_depth": 3,
         "c_range": 3.0,
         "crystals/cycle": 20,
         "death_disable": true,
+        "render_normal": false,
         "fill_color": {
           "rainbow": false,
           "noAlphaSync": false,
           "sync": true,
           "value": {
             "a": 61,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "outline_color": {
@@ -1654,9 +1694,9 @@
           "sync": true,
           "value": {
             "a": 179,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "debug": false
@@ -1702,9 +1742,9 @@
           "sync": true,
           "value": {
             "a": 220,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "bar_color_low": {
@@ -1713,9 +1753,9 @@
           "sync": true,
           "value": {
             "a": 220,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
@@ -1734,9 +1774,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "lightning": false
@@ -1753,7 +1793,7 @@
     },
     {
       "name": "Trajectories",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "line_color": {
           "rainbow": false,
@@ -1761,9 +1801,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "entities_fill": {
@@ -1772,9 +1812,9 @@
           "sync": true,
           "value": {
             "a": 100,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "entities_outline": {
@@ -1783,9 +1823,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "player_line_color": {
@@ -1794,9 +1834,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "blocks_fill": {
@@ -1805,9 +1845,9 @@
           "sync": true,
           "value": {
             "a": 100,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         },
         "blocks_outline": {
@@ -1816,9 +1856,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 249,
+            "g": 120,
+            "b": 120
           }
         }
       }
@@ -1890,9 +1930,13 @@
     }
   ]
 ,
-  "server": "kr"
+  "server": "krcrystal"
 ,
   "pingRange": "0 - 250"
 ,
-  "uploader": "Nosvo"
+  "uploader": "nosvo"
+,
+  "updated": "1754380368913"
+,
+  "version": "2.0.0-beta.fontAConf.dev-Cx"
 }
