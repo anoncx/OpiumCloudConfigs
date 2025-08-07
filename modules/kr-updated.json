@@ -200,6 +200,14 @@
       }
     },
     {
+      "name": "Blink",
+      "enabled": false,
+      "settings": {
+        "mode": "AUTO",
+        "distance": 5.0
+      }
+    },
+    {
       "name": "Blocker",
       "enabled": false,
       "settings": {
@@ -315,13 +323,14 @@
       "name": "Chams",
       "enabled": true,
       "settings": {
+        "texture": false,
         "render_mode": "Boxes",
         "fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 73,
+            "a": 62,
             "r": 253,
             "g": 135,
             "b": 136
@@ -921,7 +930,7 @@
           "value": {
             "a": 125,
             "r": 41,
-            "g": 194,
+            "g": 193,
             "b": 204
           }
         }
@@ -961,7 +970,7 @@
     },
     {
       "name": "FastResolver",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "delay": 0
       }
@@ -1160,6 +1169,7 @@
       "name": "InstantStrafe",
       "enabled": true,
       "settings": {
+        "speed_mode": "Velocity",
         "speed": 1.0,
         "in_air": true
       }
@@ -1680,7 +1690,6 @@
       "name": "Speed",
       "enabled": false,
       "settings": {
-        "use_timer": true,
         "timer_multiplier": 2.0
       }
     },
@@ -1709,8 +1718,10 @@
     },
     {
       "name": "Sprint",
-      "enabled": true,
-      "settings": {}
+      "enabled": false,
+      "settings": {
+        "sprint_mode": "RAGE"
+      }
     },
     {
       "name": "Step",
@@ -1784,7 +1795,7 @@
       "name": "TickShift",
       "enabled": true,
       "settings": {
-        "max_ticks": 15,
+        "max_ticks": 20,
         "delay": 1,
         "speed": 2.0,
         "air_mode": true
@@ -2003,11 +2014,11 @@
 ,
   "server": "kr"
 ,
-  "pingRange": ""
+  "pingRange": "0 - 251"
 ,
   "uploader": "Nosvo"
 ,
-  "updated": "1754557134929"
+  "updated": "1754559591469"
 ,
   "version": "2.0.0-beta.fontAConf.dev-Cx"
 }
