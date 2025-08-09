@@ -77,10 +77,10 @@
         "ignore_if_pop": true,
         "min_ratio": 1.0,
         "no_suicide": false,
-        "health_factor": 2.0,
-        "max_health": 5.0,
+        "health_factor": 1.2,
+        "max_health": 8.0,
         "armor_breaker": true,
-        "durability": 10.0,
+        "durability": 8.0,
         "assume_broken": true,
         "broken_ticks": 3,
         "swap_mode": "Silent",
@@ -923,8 +923,8 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 49,
+            "r": 54,
+            "g": 41,
             "b": 204
           }
         }
@@ -957,7 +957,7 @@
     },
     {
       "name": "FakePlayer",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "name": "Opiumless"
       }
@@ -2008,11 +2008,11 @@
 ,
   "server": "kr"
 ,
-  "pingRange": ""
+  "pingRange": "0 - 250"
 ,
   "uploader": "Nosvo"
 ,
-  "updated": "1754747847084"
+  "updated": "1754748745742"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
