@@ -3,8 +3,8 @@
     {
       "name": "ArmorHUD",
       "enabled": true,
-      "x": 50.0,
-      "y": 33.0,
+      "x": 52.0,
+      "y": 34.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "BOTTOM",
       "settings": {
@@ -70,7 +70,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -82,7 +82,6 @@
         "armor_breaker": true,
         "durability": 8.0,
         "assume_broken": true,
-        "broken_ticks": 3,
         "swap_mode": "Silent",
         "place_range": 5.2,
         "place_speed": 20.0,
@@ -157,7 +156,7 @@
     },
     {
       "name": "AutoTrap",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "swap": "Silent",
         "block_reach": 5.2,
@@ -923,9 +922,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 54,
-            "g": 41,
-            "b": 204
+            "r": 41,
+            "g": 204,
+            "b": 92
           }
         }
       }
@@ -1054,7 +1053,7 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 49,
+            "a": 30,
             "r": 255,
             "g": 0,
             "b": 3
@@ -1065,7 +1064,7 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 51,
+            "a": 31,
             "r": 0,
             "g": 255,
             "b": 55
@@ -1076,7 +1075,7 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 47,
+            "a": 77,
             "r": 255,
             "g": 0,
             "b": 2
@@ -1087,13 +1086,14 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 48,
+            "a": 77,
             "r": 53,
             "g": 255,
             "b": 0
           }
         },
         "boxheight": 0.1,
+        "animate": false,
         "animation": "FadeIn"
       }
     },
@@ -1134,6 +1134,8 @@
       "name": "Hud",
       "enabled": false,
       "settings": {
+        "screen_padding_h": 5,
+        "screen_padding_v": 5,
         "fill_color": {
           "rainbow": false,
           "noAlphaSync": false,
@@ -1437,7 +1439,7 @@
       "name": "PlayerList",
       "enabled": true,
       "x": 0.0,
-      "y": 14.0,
+      "y": 25.0,
       "horizontalAlignment": "LEFT",
       "verticalAlignment": "TOP",
       "settings": {
@@ -1857,8 +1859,8 @@
     {
       "name": "TotemCount",
       "enabled": true,
-      "x": 1.0,
-      "y": 33.0,
+      "x": -2.0,
+      "y": 34.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "BOTTOM",
       "settings": {
@@ -1966,12 +1968,13 @@
     {
       "name": "ViewModelHUD",
       "enabled": false,
-      "x": 291.0,
-      "y": 166.0,
-      "horizontalAlignment": "RIGHT",
-      "verticalAlignment": "TOP",
+      "x": 329.0,
+      "y": 0.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "BOTTOM",
       "settings": {
-        "spiny": false
+        "spiny": false,
+        "hide_background": true
       }
     },
     {
@@ -1982,6 +1985,17 @@
       "horizontalAlignment": "LEFT",
       "verticalAlignment": "TOP",
       "settings": {
+        "primary": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 176,
+            "g": 135,
+            "b": 253
+          }
+        },
         "version_mode": "GitHash",
         "spacer": "-",
         "hide_background": true
@@ -1989,14 +2003,26 @@
     },
     {
       "name": "Welcomer",
-      "enabled": false,
-      "x": 18.5,
+      "enabled": true,
+      "x": 0.5,
       "y": 0.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "TOP",
       "settings": {
+        "user_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 176,
+            "g": 135,
+            "b": 253
+          }
+        },
         "override": true,
-        "username": "nosvo"
+        "username": "nosvo",
+        "hide_background": true
       }
     },
     {
@@ -2010,9 +2036,9 @@
 ,
   "pingRange": "0 - 250"
 ,
-  "uploader": "Nosvo"
+  "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754748745742"
+  "updated": "1754783340940"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
