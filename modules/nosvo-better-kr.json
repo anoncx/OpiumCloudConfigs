@@ -69,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -81,12 +81,13 @@
         "armor_breaker": true,
         "durability": 8.0,
         "assume_broken": true,
-        "swap_mode": "Silent",
-        "place_range": 5.2,
+        "swap_mode": "None",
+        "place_range": 6.0,
         "place_speed": 20.0,
         "scan_range": 8,
         "scan_range_y": 4,
-        "break_range": 5.2,
+        "break_range": 6.0,
+        "max_attack": 3,
         "break_speed": 20.0,
         "swing_break": false,
         "fill": {
@@ -120,12 +121,10 @@
         "suicide_bind": 264,
         "no_eat_swap": false,
         "swap_health": 8.0,
-        "id_predict": true,
         "packet_count": 6,
         "fast_break": true,
         "instant_replace": true,
         "no_place_limit": true,
-        "no_break_limit": true,
         "max_wait": 1,
         "break_timeout": 0
       }
@@ -155,13 +154,15 @@
       "name": "AutoTrap",
       "enabled": false,
       "settings": {
+        "strict_direction": true,
         "swap": "Silent",
-        "block_reach": 5.2,
+        "block_reach": 6.0,
         "blocks/t": 4,
         "place_delay": 0,
         "place_support": true,
         "rotate": true,
         "fade_out": false,
+        "shrink": false,
         "animation_time": 300,
         "fill": {
           "rainbow": false,
@@ -204,9 +205,9 @@
     },
     {
       "name": "Blocker",
-      "enabled": false,
+      "enabled": true,
       "settings": {
-        "range": 5.2,
+        "range": 6.0,
         "break_progress_threshold": 1.0
       }
     },
@@ -920,9 +921,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 186,
-            "g": 41,
-            "b": 204
+            "r": 204,
+            "g": 135,
+            "b": 41
           }
         }
       }
@@ -1163,7 +1164,7 @@
       "name": "InstantStrafe",
       "enabled": true,
       "settings": {
-        "speed": 1.2,
+        "speed": 1.0,
         "in_air": true,
         "only_when_moving": false
       }
@@ -1366,7 +1367,8 @@
       "name": "Offhand",
       "enabled": true,
       "settings": {
-        "health": 16
+        "health": 16,
+        "item": "Crystal"
       }
     },
     {
@@ -1380,8 +1382,8 @@
       "name": "PacketMine",
       "enabled": true,
       "settings": {
-        "range": 5.2,
-        "swap": "Silent",
+        "range": 6.0,
+        "swap": "AlternativeSilent",
         "speed": 1.0,
         "hole_check": true,
         "reset_on_switch": false,
@@ -1738,7 +1740,6 @@
         "swing": false,
         "strict_direction": false,
         "raycast": "None",
-        "await": false,
         "delay_(ticks)": 0,
         "delay_(ms)": 0,
         "place_range": 5.2,
@@ -1788,9 +1789,9 @@
       "name": "TickShift",
       "enabled": true,
       "settings": {
-        "max_ticks": 15,
+        "max_ticks": 6,
         "delay": 1,
-        "speed": 2.0,
+        "speed": 1.5,
         "air_mode": true
       }
     },
@@ -2029,13 +2030,13 @@
     }
   ]
 ,
-  "server": ""
+  "server": "kr"
 ,
-  "pingRange": "0 - 248"
+  "pingRange": "0 - 250"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754786890777"
+  "updated": "1754791203285"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
