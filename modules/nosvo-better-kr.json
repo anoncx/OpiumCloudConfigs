@@ -69,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -317,7 +317,7 @@
     },
     {
       "name": "Chams",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "texture": false,
         "render_mode": "Boxes",
@@ -919,9 +919,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
+            "r": 154,
             "g": 41,
-            "b": 160
+            "b": 204
           }
         }
       }
@@ -1472,6 +1472,7 @@
       "enabled": true,
       "settings": {
         "duration": 3.0,
+        "animation": "Spin",
         "float_speed": 2.0,
         "spin_speed": 1.0,
         "ghost_color": {
@@ -1486,6 +1487,7 @@
           }
         },
         "glow": true,
+        "light_beam": false,
         "beam_width": 1.5,
         "beam_max_height": 20.0
       }
@@ -1567,8 +1569,9 @@
     },
     {
       "name": "Shaders",
-      "enabled": true,
+      "enabled": false,
       "settings": {
+        "shader": "Bloom",
         "max_range": 64,
         "default_width": 50.0,
         "default_quality": 2.0,
@@ -1594,38 +1597,41 @@
             "b": 253
           }
         },
-        "snow_quality": 3.0,
+        "snow_quality": 4.0,
         "snow_fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 129,
+            "a": 96,
             "r": 176,
             "g": 135,
             "b": 253
           }
         },
+        "glow_width": 2.0,
+        "glow_quality": 3.0,
+        "glow_intensity": 3.0,
         "glow_color": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 255,
+            "a": 26,
             "r": 176,
             "g": 135,
             "b": 253
           }
         },
-        "bloom_width": 2.0,
-        "bloom_quality": 5.0,
-        "bloom_intensity": 0.2,
+        "bloom_width": 1.0,
+        "bloom_quality": 6.0,
+        "bloom_intensity": 0.3,
         "bloom_fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 52,
+            "a": 61,
             "r": 176,
             "g": 135,
             "b": 253
@@ -1636,7 +1642,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 28,
+            "a": 17,
             "r": 176,
             "g": 135,
             "b": 253
@@ -1667,10 +1673,8 @@
           }
         },
         "bloom_wave": true,
-        "bloom_wave_speed": 10.0,
+        "bloom_wave_speed": 5.0,
         "bloom_wave_distance": 10.0,
-        "bloom_wave_width": 0.5,
-        "bloom_wave_blur": 0.75,
         "wave_direction": 360.0,
         "self": true,
         "creatures": false,
@@ -2034,11 +2038,11 @@
 ,
   "server": "kr"
 ,
-  "pingRange": "0 - 365"
+  "pingRange": "0 - 350"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754804419935"
+  "updated": "1754805189678"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
