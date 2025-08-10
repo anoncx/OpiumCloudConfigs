@@ -53,9 +53,8 @@
     },
     {
       "name": "AutoArmor",
-      "enabled": false,
+      "enabled": true,
       "settings": {
-        "elytra_priority": true,
         "toggle_priority": 72,
         "delay": 1,
         "blastlegs": true
@@ -70,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -88,7 +87,6 @@
         "scan_range": 8,
         "scan_range_y": 4,
         "break_range": 5.2,
-        "max_attack": 3,
         "break_speed": 20.0,
         "swing_break": false,
         "fill": {
@@ -129,8 +127,7 @@
         "no_place_limit": true,
         "no_break_limit": true,
         "max_wait": 1,
-        "break_timeout": 0,
-        "raycast_mode": "Accurate"
+        "break_timeout": 0
       }
     },
     {
@@ -415,20 +412,21 @@
       "enabled": false,
       "settings": {
         "positioning": "Center",
+        "description_delay": 0.0,
         "description_pos": "BR",
         "blur": "None",
         "snow": true,
         "search_bar": false,
         "animation_speed": 0.1,
-        "msaa_samples": 0,
+        "msaa_samples": 2,
         "sybau_narrator": true,
         "hover_animation": false,
         "popup_animation": false,
         "title_height": 12,
         "scrollbar_width": 0.0,
+        "text_padding": 2,
         "outline_width": 0.8,
-        "module_height": 14,
-        "module_side_spacing": 1,
+        "module_height": 12,
         "module_roundness": 0,
         "module_outline": true,
         "module_outline_width": 0.5,
@@ -922,9 +920,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 204,
-            "b": 92
+            "r": 186,
+            "g": 41,
+            "b": 204
           }
         }
       }
@@ -970,7 +968,7 @@
     },
     {
       "name": "FastUse",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "blocks": false,
         "crystals": false
@@ -1737,7 +1735,6 @@
       "name": "Surround",
       "enabled": false,
       "settings": {
-        "delay": "Ticks",
         "swing": false,
         "strict_direction": false,
         "raycast": "None",
@@ -2032,13 +2029,13 @@
     }
   ]
 ,
-  "server": "kr"
+  "server": ""
 ,
-  "pingRange": "0 - 250"
+  "pingRange": "0 - 248"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754783340940"
+  "updated": "1754786890777"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
