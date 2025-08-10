@@ -53,7 +53,7 @@
     },
     {
       "name": "AutoArmor",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "toggle_priority": 72,
         "delay": 1,
@@ -69,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -82,11 +82,11 @@
         "durability": 8.0,
         "assume_broken": true,
         "swap_mode": "Silent",
-        "place_range": 5.2,
+        "place_range": 5.0,
         "place_speed": 20.0,
         "scan_range": 8,
         "scan_range_y": 4,
-        "break_range": 5.2,
+        "break_range": 5.0,
         "break_speed": 20.0,
         "swing_break": false,
         "fill": {
@@ -156,7 +156,7 @@
       "settings": {
         "strict_direction": true,
         "swap": "Silent",
-        "block_reach": 5.2,
+        "block_reach": 5.0,
         "blocks/t": 4,
         "place_delay": 0,
         "place_support": true,
@@ -317,7 +317,7 @@
     },
     {
       "name": "Chams",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "texture": false,
         "render_mode": "Boxes",
@@ -919,9 +919,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 204,
-            "b": 191
+            "r": 166,
+            "g": 41,
+            "b": 204
           }
         }
       }
@@ -953,14 +953,14 @@
     },
     {
       "name": "FakePlayer",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "name": "Opiumless"
       }
     },
     {
       "name": "FastResolver",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "delay": 0
       }
@@ -1121,9 +1121,9 @@
       "enabled": false,
       "settings": {
         "range": 3.0,
-        "timer": 2.0,
-        "scan_delay": 1,
-        "snap_threshold": 1.0
+        "speed": 1.2,
+        "timer": 1.0,
+        "scan_delay": 1
       }
     },
     {
@@ -1161,7 +1161,7 @@
       "name": "InstantStrafe",
       "enabled": true,
       "settings": {
-        "speed": 1.0,
+        "speed": 1.2,
         "in_air": true,
         "only_when_moving": false
       }
@@ -1354,6 +1354,7 @@
       "name": "NoSlow",
       "enabled": true,
       "settings": {
+        "wall_push": true,
         "items": true
       }
     },
@@ -1373,14 +1374,15 @@
       "name": "PacketExp",
       "enabled": false,
       "settings": {
-        "tick_max": 2.0
+        "tick_max": 3.0,
+        "rotate": false
       }
     },
     {
       "name": "PacketMine",
       "enabled": true,
       "settings": {
-        "range": 5.2,
+        "range": 6.0,
         "swap": "Silent",
         "speed": 1.0,
         "hole_check": true,
@@ -1505,8 +1507,9 @@
       "enabled": true,
       "settings": {
         "height": 3.0,
-        "fall_speed": 2.0,
-        "use_timer": true
+        "fall_speed": 1.0,
+        "use_timer": true,
+        "timer": 1.0
       }
     },
     {
@@ -1517,7 +1520,7 @@
         "random_yaw": 0,
         "random_pitch": 0,
         "keep_ticks": 2,
-        "yaw_step": 10,
+        "yaw_step": 30,
         "lerp_step": 1.0,
         "multi_mode": "NCP"
       }
@@ -1527,7 +1530,7 @@
       "enabled": false,
       "settings": {
         "swap": "Silent",
-        "block_reach": 5.2,
+        "block_reach": 5.0,
         "blocks/t": 4,
         "place_delay": 0,
         "place_support": true,
@@ -1721,7 +1724,7 @@
     },
     {
       "name": "Step",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "height": 2.0
       }
@@ -1735,7 +1738,7 @@
     },
     {
       "name": "Surround",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "swing": false,
         "strict_direction": false,
@@ -1743,7 +1746,7 @@
         "await": false,
         "delay_(ticks)": 0,
         "delay_(ms)": 0,
-        "place_range": 5.2,
+        "place_range": 5.0,
         "priority": "Closest",
         "max_support_depth": 3,
         "c_range": 3.0,
@@ -1791,8 +1794,7 @@
       "settings": {
         "max_ticks": 15,
         "delay": 1,
-        "speed": 2.0,
-        "air_mode": true
+        "speed": 2.0
       }
     },
     {
@@ -2032,11 +2034,11 @@
 ,
   "server": "kr"
 ,
-  "pingRange": "0 - 250"
+  "pingRange": "0 - 350"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754795066259"
+  "updated": "1754803313134"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
