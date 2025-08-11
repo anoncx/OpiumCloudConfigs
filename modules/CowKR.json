@@ -979,9 +979,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
-            "g": 180,
-            "b": 41
+            "r": 41,
+            "g": 51,
+            "b": 204
           }
         }
       }
@@ -1091,7 +1091,7 @@
     },
     {
       "name": "HoleFill",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "swap": "Silent",
         "rotate": true,
@@ -1108,6 +1108,7 @@
       "enabled": true,
       "settings": {
         "range": 5.2,
+        "rotate": false,
         "swap": "Silent",
         "hole_type": "AnySafe",
         "double_delay": 0.0
@@ -1153,6 +1154,7 @@
       "enabled": true,
       "settings": {
         "speed": 1.2,
+        "in_air": true,
         "in_liquid": true
       }
     },
