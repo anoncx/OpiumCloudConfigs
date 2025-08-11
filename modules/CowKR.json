@@ -979,9 +979,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 85,
-            "b": 204
+            "r": 204,
+            "g": 180,
+            "b": 41
           }
         }
       }
@@ -1191,10 +1191,10 @@
     },
     {
       "name": "KillAura",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "range": 5.2,
-        "rotate": false
+        "rotation_mode": "Always"
       }
     },
     {
