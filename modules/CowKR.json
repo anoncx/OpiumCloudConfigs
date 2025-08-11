@@ -213,7 +213,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -285,7 +285,7 @@
     },
     {
       "name": "AutoRespawn",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "run_command": true,
         "command": "kit 123456",
@@ -979,9 +979,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 204,
-            "b": 100
+            "r": 204,
+            "g": 65,
+            "b": 41
           }
         }
       }
@@ -998,9 +998,7 @@
     {
       "name": "FastUse",
       "enabled": true,
-      "settings": {
-        "blocks": false
-      }
+      "settings": {}
     },
     {
       "name": "FullBright",
@@ -1093,7 +1091,7 @@
     },
     {
       "name": "HoleFill",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "swap": "Silent",
         "rotate": true,
@@ -1107,7 +1105,7 @@
     },
     {
       "name": "HoleRefill",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "range": 5.2,
         "swap": "Silent",
@@ -1193,9 +1191,8 @@
     },
     {
       "name": "KillAura",
-      "enabled": false,
+      "enabled": true,
       "settings": {
-        "force_sword": true,
         "range": 5.2,
         "rotate": false
       }
@@ -1341,7 +1338,7 @@
     },
     {
       "name": "PacketMine",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "range": 5.2,
         "swap": "Silent",
@@ -1501,6 +1498,14 @@
       }
     },
     {
+      "name": "Speed",
+      "enabled": false,
+      "settings": {
+        "use_timer": true,
+        "timer_multiplier": 1.19
+      }
+    },
+    {
       "name": "SpeedHUD",
       "enabled": true,
       "x": 79.0,
@@ -1518,12 +1523,10 @@
         "strict_direction": false,
         "only_on_ground": false,
         "await": false,
-        "blocks/cycle": 20,
         "delay_(ms)": 0,
-        "place_range": 6.0,
+        "place_range": 5.2,
         "ignore_crystals": false,
-        "c_range": 6.0,
-        "crystals/cycle": 20,
+        "c_range": 5.2,
         "anti_suicide": true,
         "y_disable": false,
         "jump_disable": false,
@@ -1535,7 +1538,7 @@
       "name": "TickShift",
       "enabled": true,
       "settings": {
-        "max_ticks": 15,
+        "max_ticks": 20,
         "delay": 1,
         "speed": 2.0,
         "air_mode": true
