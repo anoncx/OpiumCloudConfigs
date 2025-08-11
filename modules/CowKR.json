@@ -979,9 +979,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
-            "g": 65,
-            "b": 41
+            "r": 41,
+            "g": 85,
+            "b": 204
           }
         }
       }
@@ -1320,6 +1320,11 @@
       }
     },
     {
+      "name": "Notifications",
+      "enabled": true,
+      "settings": {}
+    },
+    {
       "name": "Offhand",
       "enabled": true,
       "settings": {
@@ -1395,7 +1400,7 @@
         "random_yaw": 0,
         "random_pitch": 0,
         "keep_ticks": 2,
-        "render": "None",
+        "render": "Head",
         "yaw_step": 35,
         "lerp_step": 1.0,
         "multi_mode": "NCP",
