@@ -919,8 +919,8 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
-            "g": 78,
+            "r": 166,
+            "g": 204,
             "b": 41
           }
         }
@@ -1805,7 +1805,7 @@
       "name": "TickShiftBarHUD",
       "enabled": true,
       "x": 0.0,
-      "y": 9.5,
+      "y": 7.5,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "CENTER",
       "settings": {
@@ -2042,7 +2042,7 @@
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754805220622"
+  "updated": "1754975970328"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
