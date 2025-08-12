@@ -69,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -920,7 +920,7 @@
           "value": {
             "a": 125,
             "r": 204,
-            "g": 191,
+            "g": 135,
             "b": 41
           }
         }
@@ -1726,7 +1726,7 @@
     },
     {
       "name": "Step",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "height": 2.0
       }
@@ -2035,11 +2035,11 @@
 ,
   "server": "kr"
 ,
-  "pingRange": "0 - 250"
+  "pingRange": ""
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754989703243"
+  "updated": "1754989719452"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
