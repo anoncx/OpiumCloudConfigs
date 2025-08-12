@@ -69,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -77,9 +77,9 @@
         "min_ratio": 1.0,
         "no_suicide": false,
         "health_factor": 1.2,
-        "max_health": 8.0,
+        "max_health": 5.0,
         "armor_breaker": true,
-        "durability": 8.0,
+        "durability": 10.0,
         "assume_broken": true,
         "swap_mode": "Silent",
         "place_range": 5.0,
@@ -919,8 +919,8 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 166,
-            "g": 204,
+            "r": 204,
+            "g": 191,
             "b": 41
           }
         }
@@ -995,7 +995,6 @@
       "name": "FreeLook",
       "enabled": false,
       "settings": {
-        "enum_setting": "Camera",
         "third_person_mode": true
       }
     },
@@ -1324,7 +1323,7 @@
     },
     {
       "name": "NoMiningTrace",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "onlywhilepick": false
       }
@@ -1518,11 +1517,10 @@
       "name": "Rotations",
       "enabled": false,
       "settings": {
-        "mode": "YawOnly",
         "random_yaw": 0,
         "random_pitch": 0,
         "keep_ticks": 2,
-        "yaw_step": 30,
+        "yaw_step": 10,
         "lerp_step": 1.0,
         "multi_mode": "NCP"
       }
@@ -1728,7 +1726,7 @@
     },
     {
       "name": "Step",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "height": 2.0
       }
@@ -1745,7 +1743,6 @@
       "enabled": false,
       "settings": {
         "swing": false,
-        "strict_direction": false,
         "raycast": "None",
         "await": false,
         "delay_(ticks)": 0,
@@ -2038,11 +2035,11 @@
 ,
   "server": "kr"
 ,
-  "pingRange": "0 - 350"
+  "pingRange": "0 - 250"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1754975970328"
+  "updated": "1754989703243"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
