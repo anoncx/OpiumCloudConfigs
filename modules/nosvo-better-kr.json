@@ -11,10 +11,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 161,
-            "r": 45,
-            "g": 45,
-            "b": 45
+            "a": 88,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "normal_outline": {
@@ -33,10 +33,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 190,
-            "r": 65,
-            "g": 65,
-            "b": 65
+            "a": 154,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "hover_outline": {
@@ -48,6 +48,28 @@
             "r": 176,
             "g": 135,
             "b": 253
+          }
+        },
+        "inactive_bg": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 89,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "inactive_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 120,
+            "r": 35,
+            "g": 35,
+            "b": 35
           }
         },
         "slider_handle": {
@@ -993,9 +1015,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
-            "g": 101,
-            "b": 41
+            "r": 41,
+            "g": 204,
+            "b": 149
           }
         }
       }
@@ -2111,7 +2133,7 @@
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1755168018622"
+  "updated": "1755168121677"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
