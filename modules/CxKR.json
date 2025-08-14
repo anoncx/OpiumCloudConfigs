@@ -106,13 +106,16 @@
     {
       "name": "ArmorHUD",
       "enabled": true,
-      "x": 48.0,
-      "y": 34.0,
+      "x": 51.0,
+      "y": 40.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "BOTTOM",
       "settings": {
         "main_hand": false,
         "off_hand": false,
+        "durability": "PERCENTAGE",
+        "text_padding": 3.5,
+        "durability_position": "ABOVE",
         "hide_background": true
       }
     },
@@ -120,9 +123,9 @@
       "name": "ArrayList",
       "enabled": true,
       "x": 0.0,
-      "y": -39.5,
+      "y": 0.0,
       "horizontalAlignment": "RIGHT",
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "settings": {
         "bracket_color": {
           "rainbow": false,
@@ -255,7 +258,7 @@
       "enabled": true,
       "settings": {
         "run_command": true,
-        "command": "kit 1",
+        "command": "kit FelixHvH",
         "command_delay": 1000
       }
     },
@@ -264,11 +267,14 @@
       "enabled": false,
       "settings": {
         "swap": "Silent",
-        "block_reach": 4.5,
-        "blocks/t": 4,
+        "block_reach": 5.5,
+        "blocks/t": 5,
+        "place_delay": 0,
         "place_support": true,
+        "face": false,
         "fade_out": false,
         "animation_time": 300,
+        "shrink_end": 1.0,
         "fill": {
           "rainbow": false,
           "noAlphaSync": false,
@@ -477,13 +483,13 @@
       "name": "ChatHUD",
       "enabled": true,
       "x": 0.0,
-      "y": 77.0,
+      "y": 61.0,
       "horizontalAlignment": "LEFT",
       "verticalAlignment": "BOTTOM",
       "settings": {
         "scale": 0.89,
         "line_spacing": 0,
-        "width": 267,
+        "width": 272,
         "dynamic_width": true,
         "max_width": 1000,
         "min_width": 266,
@@ -501,6 +507,7 @@
           }
         },
         "animation_style": "Combined",
+        "fade_time": 211.0,
         "slide_distance": 50.0,
         "scroll_speed": 2,
         "scroll_indicator": false,
@@ -518,6 +525,7 @@
         "snow": true,
         "search_bar": false,
         "animation_speed": 0.1,
+        "hide_hud": false,
         "sybau_narrator": true,
         "animated_hotbar": true,
         "hover_speed": 0.4,
@@ -823,11 +831,6 @@
       }
     },
     {
-      "name": "ConfigManager",
-      "enabled": true,
-      "settings": {}
-    },
-    {
       "name": "Coordinates",
       "enabled": true,
       "x": 0.0,
@@ -919,16 +922,15 @@
           }
         },
         "fog_end": 20,
-        "do_block_tint": true,
         "block_tint": {
           "rainbow": false,
           "noAlphaSync": false,
-          "sync": true,
+          "sync": false,
           "value": {
             "a": 255,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "r": 213,
+            "g": 114,
+            "b": 114
           }
         },
         "custom_time": true,
@@ -937,9 +939,9 @@
         "item_tint_color": {
           "rainbow": false,
           "noAlphaSync": false,
-          "sync": true,
+          "sync": false,
           "value": {
-            "a": 255,
+            "a": 183,
             "r": 162,
             "g": 166,
             "b": 253
@@ -1007,9 +1009,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 77,
+            "r": 41,
             "g": 204,
-            "b": 41
+            "b": 58
           }
         }
       }
@@ -1099,7 +1101,9 @@
       "name": "Font",
       "enabled": false,
       "settings": {
+        "font_size": 9,
         "outline": false,
+        "outline_size": 1.0,
         "overwrite_mc": true
       }
     },
@@ -1156,7 +1160,9 @@
       "name": "HoleESP",
       "enabled": true,
       "settings": {
-        "range_xz": 8,
+        "update_delay": 7,
+        "range_xz": 20,
+        "range_y": 20,
         "mode": "Fade",
         "obsidian": {
           "rainbow": false,
@@ -1248,12 +1254,16 @@
       "name": "Hud",
       "enabled": false,
       "settings": {
+        "allow_overlap": true,
+        "screen_padding_h": 0,
+        "screen_padding_v": 0,
+        "align_tolerance": 1.0,
         "fill_color": {
           "rainbow": false,
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 100,
+            "a": 0,
             "r": 0,
             "g": 0,
             "b": 0
@@ -1270,7 +1280,9 @@
             "b": 253
           }
         },
-        "blur": false
+        "blur": false,
+        "outline_width": 0.0,
+        "hover_animation": false
       }
     },
     {
@@ -1288,7 +1300,7 @@
     },
     {
       "name": "InventoryHUD",
-      "enabled": true,
+      "enabled": false,
       "x": 0.0,
       "y": 0.0,
       "horizontalAlignment": "RIGHT",
@@ -1582,9 +1594,9 @@
     },
     {
       "name": "PlayerList",
-      "enabled": true,
+      "enabled": false,
       "x": 0.0,
-      "y": 65.0,
+      "y": 75.0,
       "horizontalAlignment": "LEFT",
       "verticalAlignment": "TOP",
       "settings": {
@@ -1755,8 +1767,8 @@
             "b": 253
           }
         },
-        "bloom_width": 1.0,
-        "bloom_quality": 10.0,
+        "bloom_width": 2.4,
+        "bloom_quality": 6.0,
         "bloom_intensity": 1.0,
         "bloom_fill": {
           "rainbow": false,
@@ -1787,10 +1799,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 46,
-            "r": 103,
-            "g": 242,
-            "b": 255
+            "a": 21,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "gradient_color_2": {
@@ -1839,9 +1851,9 @@
     },
     {
       "name": "SpotifyHUD",
-      "enabled": true,
-      "x": 0.0,
-      "y": 0.0,
+      "enabled": false,
+      "x": 417.0,
+      "y": 165.0,
       "horizontalAlignment": "RIGHT",
       "verticalAlignment": "TOP",
       "settings": {
@@ -1904,6 +1916,7 @@
         "place_range": 5.2,
         "priority": "Normal",
         "max_support_depth": 3,
+        "crystal_handling": "Replace",
         "c_range": 3.0,
         "crystals/cycle": 20,
         "death_disable": true,
@@ -1934,7 +1947,7 @@
     },
     {
       "name": "TargetHUD",
-      "enabled": true,
+      "enabled": false,
       "x": 0.0,
       "y": 0.0,
       "horizontalAlignment": "MIDDLE",
@@ -1949,7 +1962,7 @@
       "settings": {
         "max_ticks": 15,
         "delay": 1,
-        "speed": 2.4,
+        "speed": 2.2,
         "air_mode": true
       }
     },
@@ -1997,9 +2010,9 @@
         "loading_bar": {
           "rainbow": false,
           "noAlphaSync": false,
-          "sync": true,
+          "sync": false,
           "value": {
-            "a": 200,
+            "a": 183,
             "r": 162,
             "g": 166,
             "b": 253
@@ -2011,7 +2024,7 @@
       "name": "TotemCount",
       "enabled": true,
       "x": 0.0,
-      "y": 24.0,
+      "y": 38.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "BOTTOM",
       "settings": {
@@ -2140,13 +2153,12 @@
     },
     {
       "name": "Welcomer",
-      "enabled": false,
-      "x": 18.5,
+      "enabled": true,
+      "x": 0.0,
       "y": 0.0,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "TOP",
       "settings": {
-        "override": true,
         "username": "nosvo"
       }
     },
@@ -2163,7 +2175,7 @@
 ,
   "uploader": "CxOPM"
 ,
-  "updated": "1755109982039"
+  "updated": "1755182525519"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
