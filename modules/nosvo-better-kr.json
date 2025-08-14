@@ -1015,7 +1015,7 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 66,
+            "r": 87,
             "g": 41,
             "b": 204
           }
@@ -1549,7 +1549,9 @@
             "b": 38
           }
         },
+        "line_spacing": 1,
         "show_ping": false,
+        "sort_mode": "NameLengthDesc",
         "hide_background": true
       }
     },
@@ -2127,13 +2129,13 @@
     }
   ]
 ,
-  "server": ""
+  "server": "krcrystal"
 ,
   "pingRange": "0 - 350"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1755168308910"
+  "updated": "1755168533820"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
