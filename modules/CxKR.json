@@ -178,38 +178,35 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
         "ignore_if_pop": true,
         "min_ratio": 1.0,
         "no_suicide": false,
-        "health_factor": 12.0,
-        "max_health": 19.0,
+        "health_factor": 1.2,
+        "max_health": 8.0,
         "armor_breaker": true,
-        "durability": 12.0,
+        "durability": 10.0,
         "assume_broken": true,
-        "broken_ticks": 3,
         "swap_mode": "Silent",
-        "place_range": 6.0,
+        "place_range": 5.0,
         "place_speed": 20.0,
         "scan_range": 8,
         "scan_range_y": 4,
-        "break_range": 6.0,
-        "max_attack": 3,
+        "break_range": 5.0,
         "break_speed": 20.0,
         "swing_break": false,
-        "anti-quiver": true,
         "fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 72,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 93,
+            "r": 253,
+            "g": 135,
+            "b": 136
           }
         },
         "outline": {
@@ -217,30 +214,30 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 125,
-            "r": 162,
-            "g": 166,
-            "b": 253
+            "a": 157,
+            "r": 253,
+            "g": 135,
+            "b": 136
           }
         },
         "fade_time": 300,
         "speed": 0.1,
         "render_text": false,
-        "damage_mode": "Full",
-        "target_range": 8,
-        "prediction": 5,
+        "damage_mode": "Fast",
+        "target_range": 16,
+        "prediction_type": "AVERAGE",
         "predict_self": true,
-        "suicide_bind": 327,
+        "suicide_bind": 264,
         "no_eat_swap": false,
         "swap_health": 8.0,
         "id_predict": true,
-        "packet_count": 3,
+        "packet_count": 6,
         "fast_break": true,
         "instant_replace": true,
         "no_place_limit": true,
-        "max_wait": 150,
-        "break_timeout": 150,
-        "raycast_mode": "Accurate"
+        "max_depth": 1,
+        "max_wait": 1,
+        "break_timeout": 0
       }
     },
     {
