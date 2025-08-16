@@ -1030,8 +1030,8 @@
           "value": {
             "a": 125,
             "r": 204,
-            "g": 41,
-            "b": 65
+            "g": 105,
+            "b": 41
           }
         }
       }
@@ -1063,7 +1063,7 @@
     },
     {
       "name": "FakePlayer",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "name": "Opiumless"
       }
@@ -1098,6 +1098,13 @@
       "settings": {
         "customfont": false,
         "font_size": 9
+      }
+    },
+    {
+      "name": "FreeLook",
+      "enabled": false,
+      "settings": {
+        "third_person_mode": true
       }
     },
     {
@@ -1136,7 +1143,7 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 161,
+            "a": 91,
             "r": 255,
             "g": 0,
             "b": 2
@@ -1147,7 +1154,7 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 160,
+            "a": 91,
             "r": 0,
             "g": 255,
             "b": 81
@@ -1265,6 +1272,7 @@
       "name": "InstantStrafe",
       "enabled": true,
       "settings": {
+        "speed": 1.2,
         "in_air": true
       }
     },
@@ -1458,7 +1466,7 @@
         },
         "bloom_width": 4.0,
         "bloom_quality": 6.0,
-        "bloom_intensity": 0.3,
+        "bloom_intensity": 0.15,
         "bloom_fill": {
           "rainbow": false,
           "noAlphaSync": true,
@@ -1488,7 +1496,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 255,
+            "a": 25,
             "r": 229,
             "g": 199,
             "b": 255
@@ -1499,14 +1507,20 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 255,
-            "r": 253,
-            "g": 251,
-            "b": 187
+            "a": 21,
+            "r": 248,
+            "g": 186,
+            "b": 251
           }
         },
         "bloom_wave": true,
-        "gradient_direction": 180.0,
+        "bloom_wave_speed": 3.0,
+        "bloom_wave_distance": 0.5,
+        "bloom_wave_width": 0.3,
+        "bloom_wave_blur": 1.0,
+        "gradient_direction": 200.0,
+        "wave_direction": 200.0,
+        "self": true,
         "creatures": false,
         "monsters": false,
         "ambients": false
@@ -1618,6 +1632,25 @@
       }
     },
     {
+      "name": "TitleScreen",
+      "enabled": false,
+      "settings": {
+        "loading_bar": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 229,
+            "g": 199,
+            "b": 255
+          }
+        },
+        "watermark": false,
+        "advanced": true
+      }
+    },
+    {
       "name": "Velocity",
       "enabled": true,
       "settings": {}
@@ -1627,7 +1660,10 @@
       "enabled": true,
       "settings": {
         "separate_hands": false,
+        "swing_speed": 10,
         "no_down_animation": true,
+        "item_use_max_scale": 1.0,
+        "rotation_degrees": 5.0,
         "main_scale_x": 1.35,
         "main_y": -0.2,
         "main_z": -0.3,
@@ -1680,11 +1716,11 @@
 ,
   "server": "krcrystal"
 ,
-  "pingRange": "0 - 350"
+  "pingRange": "0 - 250"
 ,
-  "uploader": "ScaredOfWomen"
+  "uploader": "WideLoad"
 ,
-  "updated": "1755337000480"
+  "updated": "1755347013049"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
