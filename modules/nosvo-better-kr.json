@@ -171,7 +171,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 6,
         "max_damage": 12,
@@ -1029,8 +1029,8 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 56,
-            "g": 41,
+            "r": 41,
+            "g": 138,
             "b": 204
           }
         }
@@ -1536,7 +1536,7 @@
     },
     {
       "name": "Surround",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "delay": "Ticks",
         "rotate": false,
@@ -1729,11 +1729,11 @@
 ,
   "server": "krcrystal"
 ,
-  "pingRange": "0 - 350"
+  "pingRange": ""
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1755432910301"
+  "updated": "1755432947100"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
