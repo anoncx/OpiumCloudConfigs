@@ -171,7 +171,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 6,
         "max_damage": 12,
@@ -1029,9 +1029,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
-            "g": 105,
-            "b": 41
+            "r": 56,
+            "g": 41,
+            "b": 204
           }
         }
       }
@@ -1313,6 +1313,7 @@
       "enabled": true,
       "settings": {
         "noexplosions": true,
+        "noarmor": true,
         "noportal": true,
         "nopowderedsnow": true,
         "nopumpkin": true,
@@ -1535,7 +1536,7 @@
     },
     {
       "name": "Surround",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "delay": "Ticks",
         "rotate": false,
@@ -1651,6 +1652,18 @@
       }
     },
     {
+      "name": "TotemCount",
+      "enabled": true,
+      "x": 0.0,
+      "y": 35.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "mode": "Item",
+        "hide_background": true
+      }
+    },
+    {
       "name": "Velocity",
       "enabled": true,
       "settings": {}
@@ -1716,11 +1729,11 @@
 ,
   "server": "krcrystal"
 ,
-  "pingRange": "0 - 250"
+  "pingRange": "0 - 350"
 ,
-  "uploader": "WideLoad"
+  "uploader": "ScaredOfWomen"
 ,
-  "updated": "1755347013049"
+  "updated": "1755432910301"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
