@@ -173,7 +173,7 @@
       "name": "AutoCrystal",
       "enabled": false,
       "settings": {
-        "min_damage": 6,
+        "min_damage": 4,
         "max_damage": 12,
         "ignore_if_pop": true,
         "min_ratio": 2.0,
@@ -209,7 +209,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 157,
+            "a": 221,
             "r": 229,
             "g": 199,
             "b": 255
@@ -888,7 +888,7 @@
     },
     {
       "name": "DiscordRPC",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "update_interval": 50,
         "mode": "Custom",
@@ -1029,9 +1029,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
+            "r": 97,
             "g": 204,
-            "b": 143
+            "b": 41
           }
         }
       }
@@ -1118,46 +1118,46 @@
       "settings": {
         "obsidian": {
           "rainbow": false,
-          "noAlphaSync": false,
-          "sync": false,
+          "noAlphaSync": true,
+          "sync": true,
           "value": {
             "a": 34,
-            "r": 255,
-            "g": 0,
-            "b": 2
+            "r": 229,
+            "g": 199,
+            "b": 255
           }
         },
         "bedrock": {
           "rainbow": false,
-          "noAlphaSync": false,
-          "sync": false,
+          "noAlphaSync": true,
+          "sync": true,
           "value": {
             "a": 38,
-            "r": 0,
-            "g": 255,
-            "b": 81
+            "r": 229,
+            "g": 199,
+            "b": 255
           }
         },
         "obsidian_outline": {
           "rainbow": false,
-          "noAlphaSync": false,
-          "sync": false,
+          "noAlphaSync": true,
+          "sync": true,
           "value": {
             "a": 91,
-            "r": 255,
-            "g": 0,
-            "b": 2
+            "r": 229,
+            "g": 199,
+            "b": 255
           }
         },
         "bedrock_outline": {
           "rainbow": false,
-          "noAlphaSync": false,
-          "sync": false,
+          "noAlphaSync": true,
+          "sync": true,
           "value": {
             "a": 91,
-            "r": 0,
-            "g": 255,
-            "b": 81
+            "r": 229,
+            "g": 199,
+            "b": 255
           }
         },
         "animation": "FadeIn"
@@ -1576,9 +1576,9 @@
       "name": "TickShift",
       "enabled": true,
       "settings": {
-        "max_ticks": 40,
+        "max_ticks": 15,
         "delay": 1,
-        "speed": 1.5,
+        "speed": 2.0,
         "air_mode": true
       }
     },
@@ -1730,11 +1730,11 @@
 ,
   "server": "krcrystal"
 ,
-  "pingRange": ""
+  "pingRange": "0 - 250"
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1755562885964"
+  "updated": "1755570660950"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
