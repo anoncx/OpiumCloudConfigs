@@ -1030,8 +1030,8 @@
           "value": {
             "a": 125,
             "r": 41,
-            "g": 138,
-            "b": 204
+            "g": 204,
+            "b": 143
           }
         }
       }
@@ -1272,7 +1272,7 @@
       "name": "InstantStrafe",
       "enabled": true,
       "settings": {
-        "speed": 1.2,
+        "speed": 1.0,
         "in_air": true
       }
     },
@@ -1413,6 +1413,7 @@
         },
         "glow": true,
         "glow_radius": 1.0,
+        "light_beam": false,
         "beam_width": 1.5
       }
     },
@@ -1733,7 +1734,7 @@
 ,
   "uploader": "ScaredOfWomen"
 ,
-  "updated": "1755432947100"
+  "updated": "1755562885964"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
