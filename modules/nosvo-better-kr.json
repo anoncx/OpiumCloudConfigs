@@ -2,7 +2,7 @@
   "modules": [
     {
       "name": "Animations",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "style": "Opium",
         "custom_colors": true,
@@ -571,7 +571,7 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 132,
+            "a": 85,
             "r": 0,
             "g": 0,
             "b": 0
@@ -601,13 +601,13 @@
         },
         "selection": {
           "rainbow": false,
-          "noAlphaSync": false,
-          "sync": false,
+          "noAlphaSync": true,
+          "sync": true,
           "value": {
             "a": 80,
-            "r": 65,
-            "g": 135,
-            "b": 230
+            "r": 229,
+            "g": 199,
+            "b": 255
           }
         },
         "slider": {
@@ -670,7 +670,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 255,
+            "a": 168,
             "r": 229,
             "g": 199,
             "b": 255
@@ -769,7 +769,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 89,
+            "a": 36,
             "r": 229,
             "g": 199,
             "b": 255
@@ -1029,9 +1029,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 97,
+            "r": 41,
             "g": 204,
-            "b": 41
+            "b": 177
           }
         }
       }
@@ -1040,7 +1040,7 @@
       "name": "FOVModify",
       "enabled": true,
       "settings": {
-        "fov_static": 150
+        "fov_static": 140
       }
     },
     {
@@ -1206,10 +1206,10 @@
       "name": "HoleSnap",
       "enabled": false,
       "settings": {
-        "timer": 1.5,
+        "speed": 1.5,
+        "timer": 1.0,
         "scan_delay": 1,
-        "snap_threshold": 0.1,
-        "step_mode": "Always"
+        "snap_threshold": 0.1
       }
     },
     {
@@ -1296,14 +1296,19 @@
     },
     {
       "name": "NoInteract",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "mode": "Sneak"
       }
     },
     {
-      "name": "NoMiningTrace",
+      "name": "NoLiquidBreak",
       "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "NoMiningTrace",
+      "enabled": false,
       "settings": {
         "onlywhilepick": false
       }
@@ -1356,8 +1361,9 @@
       "name": "PacketExp",
       "enabled": false,
       "settings": {
-        "tick_max": 3.0,
-        "rotate": false
+        "tick_max": 5.0,
+        "rotate": false,
+        "auto_disable": false
       }
     },
     {
@@ -1423,6 +1429,16 @@
       "settings": {
         "height": 3.0,
         "fall_speed": 1.0
+      }
+    },
+    {
+      "name": "Rotations",
+      "enabled": false,
+      "settings": {
+        "random_yaw": 0,
+        "random_pitch": 0,
+        "keep_ticks": 0,
+        "multi_mode": "NCP"
       }
     },
     {
@@ -1546,6 +1562,9 @@
         "delay_(ms)": 0,
         "place_range": 5.0,
         "priority": "Normal",
+        "crystal_handling": "Ignore",
+        "c_range": 3.0,
+        "crystals/cycle": 20,
         "death_disable": true,
         "fill_color": {
           "rainbow": false,
@@ -1576,9 +1595,9 @@
       "name": "TickShift",
       "enabled": true,
       "settings": {
-        "max_ticks": 15,
+        "max_ticks": 40,
         "delay": 1,
-        "speed": 2.0,
+        "speed": 1.5,
         "air_mode": true
       }
     },
@@ -1586,7 +1605,7 @@
       "name": "TickShiftBarHUD",
       "enabled": true,
       "x": 0.0,
-      "y": 5.5,
+      "y": 7.5,
       "horizontalAlignment": "MIDDLE",
       "verticalAlignment": "CENTER",
       "settings": {
@@ -1637,19 +1656,54 @@
       "name": "TitleScreen",
       "enabled": false,
       "settings": {
+        "splashtexts": "Minecraft",
+        "background": "Image",
         "loading_bar": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 200,
+            "a": 217,
+            "r": 229,
+            "g": 199,
+            "b": 255
+          }
+        },
+        "main_bolt": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 214,
+            "r": 229,
+            "g": 199,
+            "b": 255
+          }
+        },
+        "glow": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 167,
             "r": 229,
             "g": 199,
             "b": 255
           }
         },
         "watermark": false,
-        "advanced": true
+        "advanced": true,
+        "font": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 229,
+            "g": 199,
+            "b": 255
+          }
+        }
       }
     },
     {
@@ -1673,14 +1727,17 @@
       "name": "ViewModel",
       "enabled": true,
       "settings": {
-        "separate_hands": false,
         "swing_speed": 10,
         "no_down_animation": true,
+        "item_use_animation": false,
         "item_use_max_scale": 1.0,
         "rotation_degrees": 5.0,
-        "main_scale_x": 1.35,
-        "main_y": -0.2,
-        "main_z": -0.3,
+        "main_x": -0.5,
+        "main_y": -0.3,
+        "main_z": -0.6,
+        "off_x": 0.5,
+        "off_y": -0.3,
+        "off_z": -0.6,
         "static_eating": false,
         "left_y_eat": 60.0
       }
@@ -1720,11 +1777,6 @@
         "username": "nosvo",
         "hide_background": true
       }
-    },
-    {
-      "name": "XCarry",
-      "enabled": true,
-      "settings": {}
     }
   ]
 ,
@@ -1732,9 +1784,9 @@
 ,
   "pingRange": "0 - 250"
 ,
-  "uploader": "ScaredOfWomen"
+  "uploader": "nosvo"
 ,
-  "updated": "1755570660950"
+  "updated": "1755593817597"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
