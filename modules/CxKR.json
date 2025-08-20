@@ -162,7 +162,6 @@
       "name": "AutoArmor",
       "enabled": true,
       "settings": {
-        "elytra_priority": true,
         "toggle_priority": 72,
         "delay": 1,
         "blastlegs": true
@@ -178,7 +177,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 8,
         "max_damage": 10,
@@ -204,9 +203,9 @@
           "sync": true,
           "value": {
             "a": 93,
-            "r": 253,
-            "g": 135,
-            "b": 136
+            "r": 162,
+            "g": 166,
+            "b": 253
           }
         },
         "outline": {
@@ -215,9 +214,9 @@
           "sync": true,
           "value": {
             "a": 157,
-            "r": 253,
-            "g": 135,
-            "b": 136
+            "r": 162,
+            "g": 166,
+            "b": 253
           }
         },
         "fade_time": 300,
@@ -486,7 +485,7 @@
       "settings": {
         "scale": 0.89,
         "line_spacing": 0,
-        "width": 272,
+        "width": 266,
         "dynamic_width": true,
         "max_width": 1000,
         "min_width": 266,
@@ -1007,8 +1006,8 @@
           "value": {
             "a": 125,
             "r": 41,
-            "g": 204,
-            "b": 58
+            "g": 95,
+            "b": 204
           }
         }
       }
@@ -1245,6 +1244,17 @@
         "timer": 3.0,
         "snap_threshold": 0.3,
         "step_mode": "Always"
+      }
+    },
+    {
+      "name": "HoleSnapCx",
+      "enabled": false,
+      "settings": {
+        "speed": 1.1,
+        "timer": 1.2,
+        "step_mode": "Always",
+        "max_jump_height": 2,
+        "max_fall_distance": 10
       }
     },
     {
@@ -1572,6 +1582,7 @@
       "name": "Phase",
       "enabled": false,
       "settings": {
+        "mode": "Kr2",
         "only_on_ground": false,
         "partial": false,
         "movement": 0.0,
@@ -1901,7 +1912,7 @@
     },
     {
       "name": "Surround",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "delay": "Ticks",
         "swing": false,
@@ -2172,7 +2183,7 @@
 ,
   "uploader": "CxOPM"
 ,
-  "updated": "1755182525519"
+  "updated": "1755718273996"
 ,
   "version": "2.0.1-beta.dev-Cx"
 }
