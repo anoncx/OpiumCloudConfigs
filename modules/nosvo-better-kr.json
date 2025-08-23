@@ -171,7 +171,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "min_damage": 4,
         "max_damage": 12,
@@ -1030,9 +1030,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 149,
-            "g": 41,
-            "b": 204
+            "r": 41,
+            "g": 204,
+            "b": 116
           }
         }
       }
@@ -1064,7 +1064,7 @@
     },
     {
       "name": "FakePlayer",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "name": "Opiumless"
       }
@@ -1881,7 +1881,7 @@
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1755946785773"
+  "updated": "1755946804433"
 ,
   "version": "2.0.2-beta.surround"
 }
