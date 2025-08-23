@@ -171,16 +171,15 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 4,
         "max_damage": 12,
         "ignore_if_pop": true,
         "min_ratio": 2.0,
         "no_suicide": false,
-        "health_factor": 1.2,
+        "health_factor": 1.000000000001,
         "max_health": 12.0,
-        "armor_breaker": true,
         "durability": 12.0,
         "assume_broken": true,
         "swap_mode": "Silent",
@@ -221,15 +220,16 @@
         "shrink": true,
         "speed": 0.1,
         "render_text": false,
-        "damage_mode": "Fast",
+        "damage_mode": "Full",
         "target_range": 16,
         "prediction_type": "AVERAGE",
         "predict_self": true,
         "suicide_bind": 264,
         "no_eat_swap": false,
         "swap_health": 8.0,
-        "id_predict": true,
-        "packet_count": 6,
+        "id_mode": "Both",
+        "item_disable": false,
+        "packet_count": 3,
         "fast_break": true,
         "instant_replace": true,
         "no_place_limit": true,
@@ -255,7 +255,7 @@
       "enabled": true,
       "settings": {
         "run_command": true,
-        "command": "kit 1",
+        "command": "kit 2",
         "command_delay": 1000
       }
     },
@@ -301,6 +301,7 @@
       "name": "Automations",
       "enabled": true,
       "settings": {
+        "auto_surround": false,
         "auto_packetexp": false
       }
     },
@@ -428,7 +429,6 @@
       "name": "Chams",
       "enabled": true,
       "settings": {
-        "texture": false,
         "glow": false,
         "render_mode": "Boxes",
         "fill": {
@@ -458,7 +458,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 160,
+            "a": 92,
             "r": 229,
             "g": 199,
             "b": 255
@@ -855,7 +855,7 @@
     },
     {
       "name": "CrystalModify",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "rotation_speed": 0.6,
         "size": 0.7,
@@ -945,6 +945,7 @@
           }
         },
         "fog_end": 50,
+        "do_block_tint": true,
         "block_tint": {
           "rainbow": false,
           "noAlphaSync": false,
@@ -1029,9 +1030,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 204,
-            "b": 177
+            "r": 149,
+            "g": 41,
+            "b": 204
           }
         }
       }
@@ -1040,7 +1041,7 @@
       "name": "FOVModify",
       "enabled": true,
       "settings": {
-        "fov_static": 140
+        "fov_static": 150
       }
     },
     {
@@ -1063,7 +1064,7 @@
     },
     {
       "name": "FakePlayer",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "name": "Opiumless"
       }
@@ -1213,6 +1214,40 @@
       }
     },
     {
+      "name": "HoleSnapCx",
+      "enabled": false,
+      "settings": {
+        "range": 5.0,
+        "speed": 1.0,
+        "step_mode": "Always",
+        "path_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 0,
+            "g": 255,
+            "b": 128
+          }
+        },
+        "target_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "render_nodes": false,
+        "render_target": false,
+        "show_detailed_path": false
+      }
+    },
+    {
       "name": "Hud",
       "enabled": false,
       "settings": {
@@ -1282,6 +1317,28 @@
       "settings": {}
     },
     {
+      "name": "JumpCircle",
+      "enabled": false,
+      "settings": {
+        "rotate_speed": 0.5,
+        "circle_scale": 0.5,
+        "circle_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 229,
+            "g": 199,
+            "b": 255
+          }
+        },
+        "bounce": true,
+        "bounce_height": 0.5,
+        "bounce_speed": 0.6
+      }
+    },
+    {
       "name": "KillAura",
       "enabled": true,
       "settings": {
@@ -1296,7 +1353,7 @@
     },
     {
       "name": "NoInteract",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "mode": "Sneak"
       }
@@ -1308,7 +1365,7 @@
     },
     {
       "name": "NoMiningTrace",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "onlywhilepick": false
       }
@@ -1361,8 +1418,8 @@
       "name": "PacketExp",
       "enabled": false,
       "settings": {
-        "tick_max": 5.0,
-        "rotate": false,
+        "tick_max": 2.0,
+        "spoof_rotations": true,
         "auto_disable": false
       }
     },
@@ -1402,10 +1459,25 @@
       }
     },
     {
+      "name": "Phase",
+      "enabled": false,
+      "settings": {
+        "mode": "KrNew",
+        "burrow_delay": 3000,
+        "jump_toggle": true
+      }
+    },
+    {
       "name": "PopChams",
       "enabled": true,
       "settings": {
-        "float_speed": 2.0,
+        "mode": "Wireframe",
+        "duration": 1.0,
+        "max_ghosts": 2.0,
+        "animation": "FloatSpin",
+        "easing": "BounceOut",
+        "float_speed": 1.0,
+        "scale_speed": 0.3,
         "ghost_color": {
           "rainbow": false,
           "noAlphaSync": true,
@@ -1418,7 +1490,7 @@
           }
         },
         "glow": true,
-        "glow_radius": 1.0,
+        "glow_radius": 0.5,
         "light_beam": false,
         "beam_width": 1.5
       }
@@ -1438,7 +1510,11 @@
         "random_yaw": 0,
         "random_pitch": 0,
         "keep_ticks": 0,
-        "multi_mode": "NCP"
+        "render": "Head",
+        "yaw_step": 180,
+        "lerp_step": 1.0,
+        "multi_mode": "NCP",
+        "allowed_diff": 7
       }
     },
     {
@@ -1558,11 +1634,12 @@
         "delay": "Ticks",
         "rotate": false,
         "strict_direction": false,
+        "await": false,
+        "blocks/cycle": 8,
         "delay_(ticks)": 0,
         "delay_(ms)": 0,
         "place_range": 5.0,
         "priority": "Normal",
-        "crystal_handling": "Ignore",
         "c_range": 3.0,
         "crystals/cycle": 20,
         "death_disable": true,
@@ -1589,6 +1666,24 @@
           }
         },
         "debug": false
+      }
+    },
+    {
+      "name": "SurroundRewrite",
+      "enabled": false,
+      "settings": {
+        "rotate": false,
+        "ground_only": true,
+        "timeout": 0,
+        "swap": "Silent",
+        "blocks/t": 4,
+        "place_delay": 0.0,
+        "only_empty": false,
+        "attempt_delay": 0,
+        "place_support": true,
+        "y_disable": false,
+        "death_disable": true,
+        "item_disable": true
       }
     },
     {
@@ -1784,9 +1879,9 @@
 ,
   "pingRange": "0 - 250"
 ,
-  "uploader": "nosvo"
+  "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1755593817597"
+  "updated": "1755946785773"
 ,
-  "version": "2.0.1-beta.dev-Cx"
+  "version": "2.0.2-beta.surround"
 }
