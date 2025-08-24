@@ -1,0 +1,1899 @@
+{
+  "modules": [
+    {
+      "name": "ArmorHUD",
+      "enabled": true,
+      "x": 49.0,
+      "y": 39.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "main_hand": false,
+        "off_hand": false
+      }
+    },
+    {
+      "name": "ArrayList",
+      "enabled": true,
+      "x": 0.0,
+      "y": 0.5,
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "CENTER",
+      "settings": {
+        "second_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "line_spacing": 0,
+        "only_bound": true,
+        "vertical_anim": true,
+        "open_bracket": " [",
+        "close_bracket": "]"
+      }
+    },
+    {
+      "name": "AutoArmor",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "AutoBowRelease",
+      "enabled": true,
+      "settings": {
+        "pull_ticks": 5,
+        "rotate": true
+      }
+    },
+    {
+      "name": "AutoCrystal",
+      "enabled": true,
+      "settings": {
+        "min_damage": 9,
+        "max_damage": 10,
+        "ignore_if_pop": true,
+        "min_ratio": 1.01,
+        "health_factor": 10.0,
+        "max_health": 12.0,
+        "armor_breaker": true,
+        "durability": 15.0,
+        "assume_broken": true,
+        "broken_ticks": 4,
+        "swap_mode": "Silent",
+        "place_range": 5.2,
+        "break_range": 5.2,
+        "rotate": false,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 80,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "fade": true,
+        "fade_time": 804,
+        "shrink": true,
+        "shrink_end": 0.95,
+        "target": "Place",
+        "trail": true,
+        "trail_mode": "Fade",
+        "render_text": false,
+        "suicide_bind": 161,
+        "item_disable": false,
+        "item_age": 1,
+        "packet_count": 4,
+        "t_packet_count": 4,
+        "fast_break": true,
+        "instant_replace": true,
+        "no_place_limit": true,
+        "no_break_limit": true,
+        "break_timeout": 10
+      }
+    },
+    {
+      "name": "AutoReplenish",
+      "enabled": true,
+      "settings": {
+        "replenish_ec": true,
+        "ec_threshold": 0.4
+      }
+    },
+    {
+      "name": "AutoRespawn",
+      "enabled": true,
+      "settings": {
+        "run_command": true,
+        "command": "kit _cpv",
+        "command_delay": 555
+      }
+    },
+    {
+      "name": "AutoTrap",
+      "enabled": false,
+      "settings": {
+        "strict_direction": true,
+        "swap": "Silent",
+        "block_reach": 5.2,
+        "blocks/t": 2,
+        "place_delay": 0,
+        "place_support": true,
+        "floor": false,
+        "shrink_start": 1.0,
+        "shrink_end": 0.8,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 80,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "BlockHighlight",
+      "enabled": true,
+      "settings": {
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 14,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 85,
+            "g": 0,
+            "b": 255
+          }
+        },
+        "mode": "Block",
+        "animate": true
+      }
+    },
+    {
+      "name": "BonerTag",
+      "enabled": true,
+      "settings": {
+        "scale": 5.0,
+        "double_update": false,
+        "armor_scale": 2.2,
+        "armor_spacing": 4.5,
+        "armor_offset": 0.0,
+        "update_interval": 10
+      }
+    },
+    {
+      "name": "BowBoostIndicator",
+      "enabled": false,
+      "x": 0.5,
+      "y": 0.5,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "CENTER",
+      "settings": {
+        "incorrect_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 36,
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "dot_size": 3.0,
+        "dot_roundness": 0
+      }
+    },
+    {
+      "name": "BreakPrediction",
+      "enabled": true,
+      "settings": {
+        "speed": 1.0,
+        "remove_after": 0,
+        "local_sync": true,
+        "assume_best": true
+      }
+    },
+    {
+      "name": "CameraTweaks",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "Chams",
+      "enabled": false,
+      "settings": {
+        "render": false,
+        "texture": false,
+        "glow": false,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 82,
+            "g": 149,
+            "b": 161
+          }
+        }
+      }
+    },
+    {
+      "name": "ChatHUD",
+      "enabled": true,
+      "x": 0.0,
+      "y": 0.5,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "CENTER",
+      "settings": {
+        "scale": 0.8,
+        "clear_on_disable": true,
+        "width": 200,
+        "height": 122,
+        "dynamic_width": true,
+        "max_width": 270,
+        "min_width": 200,
+        "padding": 1,
+        "background": true,
+        "name_highlight": false,
+        "fade_time": 187.0,
+        "slide_distance": 17.0,
+        "smooth_scroll": false,
+        "scroll_indicator": false,
+        "optimize_rendering": false
+      }
+    },
+    {
+      "name": "ClickGUI",
+      "enabled": false,
+      "settings": {
+        "side_margin": 11,
+        "panel_width": 11,
+        "category_spacing": 2,
+        "description_pos": "BL",
+        "blur": "Category",
+        "blur_size": 32,
+        "blur_sigma": 13,
+        "search_bar": false,
+        "sybau_narrator": true,
+        "animated_hotbar": true,
+        "title_height": 14,
+        "scrollbar_width": 0.0,
+        "text_padding": 2,
+        "render_icons": false,
+        "outline_width": 0.4,
+        "animation_factor": 0.2,
+        "module_height": 11,
+        "module_spacing": 2,
+        "module_side_spacing": 1,
+        "module_roundness": 0,
+        "scale_animation": false,
+        "module_glow": true,
+        "glow_radius": 5,
+        "horizontal_padding": 0.0,
+        "vertical_padding": 0.0,
+        "glow_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 7,
+            "r": 54,
+            "g": 28,
+            "b": 51
+          }
+        },
+        "glow_mode": "ENABLED",
+        "setting_height": 12,
+        "setting_spacing": 0,
+        "setting_indent": 2,
+        "indent_line_": true,
+        "line_width": 0.87,
+        "background_roundness": 0,
+        "bool_x_thickness": 4.0,
+        "bool_outline_roundness": 0,
+        "bool_outline_width": 0.0,
+        "bool_pos": "RIGHT",
+        "active_bg_color_": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 79,
+            "r": 82,
+            "g": 149,
+            "b": 161
+          }
+        },
+        "background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 74,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "group_background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 101,
+            "g": 101,
+            "b": 125
+          }
+        },
+        "setting_background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 101,
+            "g": 101,
+            "b": 125
+          }
+        },
+        "selection": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 96,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "slider": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 108,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "header": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "scrollbar": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "borders": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "enabled_state": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 160,
+            "g": 160,
+            "b": 160
+          }
+        },
+        "enabled_text": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "disabled_state": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 40,
+            "g": 40,
+            "b": 45
+          }
+        },
+        "disabled_text": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 168,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "checkbox_border": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 161,
+            "g": 55,
+            "b": 222
+          }
+        },
+        "checkbox_fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "indent_guide": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "enabled_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "Clock",
+      "enabled": true,
+      "x": 0.5,
+      "y": 9.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "TOP",
+      "settings": {}
+    },
+    {
+      "name": "Colors",
+      "enabled": false,
+      "settings": {
+        "theme_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "rainbow_speed": 10,
+        "saturation": 0.7,
+        "brightness": 0.9,
+        "max_hue": 23,
+        "enable": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "disable": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 100,
+            "g": 76,
+            "b": 77
+          }
+        }
+      }
+    },
+    {
+      "name": "Coordinates",
+      "enabled": true,
+      "x": 0.0,
+      "y": 0.0,
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "text_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "space_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "bracket_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "CrawlTrap",
+      "enabled": true,
+      "settings": {
+        "strict_direction": true,
+        "swap": "Silent",
+        "block_reach": 5.2,
+        "blocks/t": 2,
+        "place_delay": 0,
+        "place_support": true,
+        "expand": true,
+        "expand_mode": "All",
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 80,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "Criticals",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "CrystalModify",
+      "enabled": true,
+      "settings": {
+        "rotation_speed": -0.5,
+        "size": 0.75,
+        "up-down_height": 0.26,
+        "animation_ticks": 3
+      }
+    },
+    {
+      "name": "DeathEffects",
+      "enabled": true,
+      "settings": {
+        "ghost_effect": false,
+        "bloom": false
+      }
+    },
+    {
+      "name": "DiscordRPC",
+      "enabled": false,
+      "settings": {
+        "update_interval": 50
+      }
+    },
+    {
+      "name": "EntityTrails",
+      "enabled": false,
+      "settings": {
+        "players": false,
+        "self": false,
+        "items": true
+      }
+    },
+    {
+      "name": "Environment",
+      "enabled": true,
+      "settings": {
+        "modify_overworld_sky": true,
+        "modify_overworld_fog": true,
+        "overworld_sky_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 175,
+            "g": 104,
+            "b": 104
+          }
+        },
+        "overworld_fog_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "fog_end": 10,
+        "overworld_thick_fog": true,
+        "enable_nether": false,
+        "enable_end": false,
+        "do_block_tint": true,
+        "block_tint": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 176,
+            "g": 120,
+            "b": 120
+          }
+        },
+        "custom_time": true,
+        "time": 17637,
+        "item_tint_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 0,
+            "b": 220
+          }
+        },
+        "weather_mode": "CLEAR",
+        "lightning_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "ExampleModule",
+      "enabled": false,
+      "settings": {
+        "ghost_color": {
+          "rainbow": true,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 125,
+            "r": 230,
+            "g": 101,
+            "b": 69
+          }
+        }
+      }
+    },
+    {
+      "name": "ExplosionBoost",
+      "enabled": false,
+      "settings": {
+        "modifier_mode": "Collect",
+        "threshold": 0.33,
+        "y_only": true,
+        "expiration_timer": 511
+      }
+    },
+    {
+      "name": "ExtraJump",
+      "enabled": false,
+      "settings": {
+        "disable": true,
+        "speed_disable": true,
+        "h_velocity": 3.9,
+        "v_velocity": 1.0,
+        "use_timer": true,
+        "timer": 1.1,
+        "max_fall": 0.1
+      }
+    },
+    {
+      "name": "FOVModify",
+      "enabled": true,
+      "settings": {
+        "fov_static": 137
+      }
+    },
+    {
+      "name": "FPS",
+      "enabled": true,
+      "x": 0.0,
+      "y": 18.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "prefix": "FPS ",
+        "prefix_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "FastResolver",
+      "enabled": true,
+      "settings": {
+        "delay": 88
+      }
+    },
+    {
+      "name": "FastUse",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "FeetEsp",
+      "enabled": false,
+      "settings": {
+        "self": false,
+        "height": 1.0
+      }
+    },
+    {
+      "name": "Font",
+      "enabled": false,
+      "settings": {
+        "shadow": false,
+        "outline": false
+      }
+    },
+    {
+      "name": "Freecam",
+      "enabled": false,
+      "settings": {
+        "freeze": true
+      }
+    },
+    {
+      "name": "Health",
+      "enabled": false,
+      "x": 0.5,
+      "y": 0.5,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "CENTER",
+      "settings": {
+        "size": 7,
+        "hide_background": true
+      }
+    },
+    {
+      "name": "HitMarker",
+      "enabled": true,
+      "settings": {
+        "size": 11.5,
+        "thickness": 2.5,
+        "duration": 2.0,
+        "gap": 1.5,
+        "mode": "Square",
+        "animation": "Scale",
+        "speed": 2.3
+      }
+    },
+    {
+      "name": "HoleESP",
+      "enabled": true,
+      "settings": {
+        "range_xz": 5,
+        "range_y": 7,
+        "mode": "Fade",
+        "obsidian": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 30,
+            "r": 174,
+            "g": 69,
+            "b": 230
+          }
+        },
+        "bedrock": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 44,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "obsidian_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 174,
+            "g": 69,
+            "b": 230
+          }
+        },
+        "bedrock_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 0,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "boxheight": -0.3
+      }
+    },
+    {
+      "name": "HoleFill",
+      "enabled": true,
+      "settings": {
+        "predict": 2,
+        "swap": "Silent",
+        "hole_range_h": 3,
+        "no_place_range": 0.0,
+        "block_reach": 5.2,
+        "blocks/t": 2,
+        "place_delay": 0,
+        "strict_direction": true,
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 80,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "HoleRefill",
+      "enabled": true,
+      "settings": {
+        "range": 5.2,
+        "rotate": false,
+        "allow_air_place": true,
+        "swap": "Silent",
+        "hole_type": "AnySafe",
+        "double_delay": 0.0
+      }
+    },
+    {
+      "name": "Holes",
+      "enabled": false,
+      "settings": {
+        "scan_h": 10,
+        "scan_v": 10,
+        "scan_delay": 0.06
+      }
+    },
+    {
+      "name": "Hud",
+      "enabled": false,
+      "settings": {
+        "screen_padding_h": 5,
+        "screen_padding_v": 5,
+        "hud_margin_h": 0,
+        "hud_margin_v": 0,
+        "align_tolerance": 1.0,
+        "fill_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "outline_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 38,
+            "g": 176,
+            "b": 207
+          }
+        },
+        "blur_size": 32,
+        "blur_sigma": 16,
+        "outline_width": 0.0
+      }
+    },
+    {
+      "name": "InstantStrafe",
+      "enabled": true,
+      "settings": {
+        "in_air": true,
+        "only_when_moving": false
+      }
+    },
+    {
+      "name": "InventoryControl",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "InventoryHUD",
+      "enabled": true,
+      "x": 1.5,
+      "y": 60.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "scale": 0.9,
+        "show_non-stackable": false,
+        "layout": "STACKED"
+      }
+    },
+    {
+      "name": "ItemPhysics",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "JumpCircle",
+      "enabled": false,
+      "settings": {
+        "rotate_speed": 0.5,
+        "circle_scale": 0.5,
+        "circle_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "bounce": true,
+        "bounce_height": 0.5,
+        "bounce_speed": 0.6
+      }
+    },
+    {
+      "name": "KillAura",
+      "enabled": true,
+      "settings": {
+        "range": 5.2,
+        "rotate": false
+      }
+    },
+    {
+      "name": "MCA",
+      "enabled": true,
+      "settings": {
+        "ground_mode": "Pearl",
+        "elytra_firework": false,
+        "pick_block_bind": true
+      }
+    },
+    {
+      "name": "MediaPlayer",
+      "enabled": false,
+      "x": 0.0,
+      "y": 9.0,
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "service": "ANY",
+        "prefix_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "prefix": "Media "
+      }
+    },
+    {
+      "name": "NoInteract",
+      "enabled": true,
+      "settings": {
+        "mode": "Sneak",
+        "only_while_holding": true
+      }
+    },
+    {
+      "name": "NoMiningTrace",
+      "enabled": true,
+      "settings": {
+        "noendcrystal": false
+      }
+    },
+    {
+      "name": "NoRender",
+      "enabled": true,
+      "settings": {
+        "nofog": true,
+        "noexplosions": true,
+        "noarmor": true,
+        "noportal": true,
+        "nopowderedsnow": true,
+        "nopumpkin": true,
+        "novignette": true,
+        "noitemtooltip": true,
+        "nopotionoverlay": true,
+        "nofire": true,
+        "nowateroverlay": true,
+        "noinwalloverlay": true,
+        "nototemanimation": true,
+        "nodamagetilt": true,
+        "noactionbar": true,
+        "nobossbar": true
+      }
+    },
+    {
+      "name": "NoServerRotation",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "NoSlow",
+      "enabled": true,
+      "settings": {
+        "wall_push": true,
+        "webs": true,
+        "items": true
+      }
+    },
+    {
+      "name": "Notifications",
+      "enabled": false,
+      "settings": {
+        "open_bracket": "<",
+        "close_bracket": ">",
+        "enable_text": "",
+        "disable_text": "",
+        "secondary_open_bracket": "?",
+        "secondary_close_bracket": ""
+      }
+    },
+    {
+      "name": "Offhand",
+      "enabled": true,
+      "settings": {
+        "health": 20,
+        "holecheck": false,
+        "item": "Crystal"
+      }
+    },
+    {
+      "name": "PacketExp",
+      "enabled": false,
+      "settings": {
+        "tick_max": 5.5,
+        "spoof_rotations": true,
+        "auto_disable": false
+      }
+    },
+    {
+      "name": "PacketMine",
+      "enabled": true,
+      "settings": {
+        "swap": "Silent",
+        "speed": 1.0,
+        "reset_on_switch": false,
+        "animation": "Expand",
+        "color": "Custom",
+        "fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 40,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 82,
+            "g": 149,
+            "b": 161
+          }
+        }
+      }
+    },
+    {
+      "name": "Phase",
+      "enabled": false,
+      "settings": {
+        "mode": "Burrow",
+        "rb_height": 0.5,
+        "rb_count": 2
+      }
+    },
+    {
+      "name": "Ping",
+      "enabled": true,
+      "x": 0.0,
+      "y": 9.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "prefix_text": "Ping ",
+        "prefix_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "PlayerList",
+      "enabled": true,
+      "x": 0.0,
+      "y": 79.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "text_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "distance_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "line_spacing": 1,
+        "max_entries": 4,
+        "no_bots": false,
+        "show_ping": false,
+        "show_opium_logo": false,
+        "smooth_animation": false
+      }
+    },
+    {
+      "name": "PopChams",
+      "enabled": true,
+      "settings": {
+        "duration": 0.9,
+        "max_ghosts": 8.0,
+        "render_distance": 200.0,
+        "animation": "Float",
+        "easing": "BounceOut",
+        "float_speed": 3.5,
+        "spin_speed": 0.2,
+        "color_mode": "Gradient",
+        "ghost_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 17,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "gradient_start": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 0,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "gradient_end": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": false,
+          "value": {
+            "a": 255,
+            "r": 213,
+            "g": 167,
+            "b": 255
+          }
+        },
+        "through_walls": false,
+        "glow": true,
+        "glow_radius": 0.2,
+        "beam_width": 50.0,
+        "beam_offset": -50.0
+      }
+    },
+    {
+      "name": "Potions",
+      "enabled": true,
+      "x": 0.0,
+      "y": 0.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "animate": true,
+        "adjust_width": true
+      }
+    },
+    {
+      "name": "ReverseStep",
+      "enabled": true,
+      "settings": {
+        "checkheight": false,
+        "height": 2.8,
+        "fall_speed": 3.0,
+        "reduce": true
+      }
+    },
+    {
+      "name": "Rotations",
+      "enabled": false,
+      "settings": {
+        "random_yaw": 2,
+        "random_pitch": 0,
+        "keep_ticks": 10,
+        "render": "Head",
+        "yaw_step": 180,
+        "lerp_step": 1.0,
+        "multi_mode": "NCP",
+        "allowed_diff": 7
+      }
+    },
+    {
+      "name": "SelfTrap",
+      "enabled": false,
+      "settings": {
+        "floor": false,
+        "face": false,
+        "always": true
+      }
+    },
+    {
+      "name": "Shaders",
+      "enabled": true,
+      "settings": {
+        "shader": "Bloom",
+        "max_range": 20,
+        "bloom_width": 3.0,
+        "bloom_quality": 3.0,
+        "bloom_intensity": 0.38,
+        "bloom_fill": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 136,
+            "r": 82,
+            "g": 149,
+            "b": 161
+          }
+        },
+        "bloom_outline": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 51,
+            "r": 82,
+            "g": 149,
+            "b": 161
+          }
+        },
+        "use_gradient": true,
+        "use_two_colors": true,
+        "gradient_color_1": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 128,
+            "r": 215,
+            "g": 180,
+            "b": 254
+          }
+        },
+        "gradient_color_2": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 128,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "bloom_wave": true,
+        "bloom_wave_speed": 2.6,
+        "bloom_wave_distance": 4.4,
+        "bloom_wave_width": 0.11,
+        "bloom_wave_blur": 3.0,
+        "gradient_direction": 165.0,
+        "wave_direction": 196.0,
+        "bloom_grain": true,
+        "grain_intensity": 0.26,
+        "grain_scale": 17.0,
+        "grain_speed": 5.0E-6
+      }
+    },
+    {
+      "name": "Spammer",
+      "enabled": false,
+      "settings": {
+        "mode": "AutoEZ",
+        "text": "/give end_crystal 999",
+        "queue": true,
+        "delay": 40
+      }
+    },
+    {
+      "name": "Speed",
+      "enabled": false,
+      "settings": {
+        "use_timer": true,
+        "timer_multiplier": 1.1,
+        "while_sneaking": true
+      }
+    },
+    {
+      "name": "SpeedHUD",
+      "enabled": true,
+      "x": 0.0,
+      "y": 9.0,
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "num_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "prefix": ""
+      }
+    },
+    {
+      "name": "SpotifyHUD",
+      "enabled": true,
+      "x": 0.0,
+      "y": 0.0,
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "scale": 0.64,
+        "background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 0,
+            "r": 16,
+            "g": 15,
+            "b": 15
+          }
+        },
+        "text": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "artist": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 7,
+            "r": 170,
+            "g": 170,
+            "b": 170
+          }
+        },
+        "border_radius": 0,
+        "album_radius": 28,
+        "shadow": false,
+        "fade_in": false,
+        "pulse_album": false
+      }
+    },
+    {
+      "name": "Sprint",
+      "enabled": true,
+      "settings": {
+        "sprint_mode": "RAGE"
+      }
+    },
+    {
+      "name": "Step",
+      "enabled": false,
+      "settings": {
+        "height": 2.0
+      }
+    },
+    {
+      "name": "Stuck",
+      "enabled": false,
+      "settings": {
+        "mode": "Velocity"
+      }
+    },
+    {
+      "name": "Surround",
+      "enabled": false,
+      "settings": {
+        "raycast": "None",
+        "await": false,
+        "delay_(ms)": 0,
+        "crystal_handling": "Replace",
+        "c_range": 3.0,
+        "crystals/cycle": 20,
+        "y_disable": false,
+        "death_disable": true,
+        "render_normal": false,
+        "fill_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 61,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "outline_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 179,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "debug": false
+      }
+    },
+    {
+      "name": "SurroundRewrite",
+      "enabled": false,
+      "settings": {
+        "rotate": false,
+        "ground_only": true,
+        "swap": "Silent",
+        "dead_attacks": 2,
+        "assume_hit": true,
+        "place_support": true,
+        "max_health": 6.0,
+        "y_disable": false,
+        "death_disable": true,
+        "teleport_disable": false
+      }
+    },
+    {
+      "name": "TPS",
+      "enabled": false,
+      "x": 0.5,
+      "y": 0.5,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "CENTER",
+      "settings": {}
+    },
+    {
+      "name": "TickShift",
+      "enabled": false,
+      "settings": {
+        "max_ticks": 10,
+        "delay": 1,
+        "speed": 2.9,
+        "air_mode": true
+      }
+    },
+    {
+      "name": "TickShiftBarHUD",
+      "enabled": false,
+      "x": 0.0,
+      "y": 17.0,
+      "horizontalAlignment": "RIGHT",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "scale": 0.25,
+        "bar_width": 64,
+        "bar_height": 6,
+        "show_text": false,
+        "corner_radius": 0.0,
+        "background": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 114,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "bar_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "bar_color_low": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 220,
+            "r": 242,
+            "g": 138,
+            "b": 138
+          }
+        },
+        "animation_speed": 1000
+      }
+    },
+    {
+      "name": "TitleScreen",
+      "enabled": false,
+      "settings": {
+        "background": "Image",
+        "loading_bar": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 200,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        }
+      }
+    },
+    {
+      "name": "TotemCount",
+      "enabled": true,
+      "x": 0.0,
+      "y": 39.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "BOTTOM",
+      "settings": {
+        "mode": "Item"
+      }
+    },
+    {
+      "name": "Tracers",
+      "enabled": true,
+      "settings": {
+        "verticalrange": 300.0,
+        "linewidth": 0.5000000074505806,
+        "closecolor": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 89,
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "farcolor": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 30,
+            "r": 48,
+            "g": 51,
+            "b": 51
+          }
+        }
+      }
+    },
+    {
+      "name": "TrueItemCount",
+      "enabled": false,
+      "settings": {
+        "no_unstackable": true
+      }
+    },
+    {
+      "name": "Velocity",
+      "enabled": true,
+      "settings": {}
+    },
+    {
+      "name": "ViewModel",
+      "enabled": true,
+      "settings": {
+        "swing_speed": 10,
+        "no_down_animation": true,
+        "item_use_animation": false,
+        "animation_mode": "BOUNCE",
+        "main_scale_x": 0.56,
+        "main_scale_y": 0.59,
+        "main_scale_z": 0.6,
+        "main_x": 0.5,
+        "main_y": -0.11,
+        "main_z": -0.52,
+        "off_scale_x": 0.59,
+        "off_scale_y": 0.6,
+        "off_scale_z": 0.6,
+        "off_x": -0.42,
+        "off_y": -0.52,
+        "off_z": -0.52,
+        "right_x_degrees": -104.0,
+        "right_y_degrees": -41.4,
+        "right_z_degrees": -1.5,
+        "static_eating": false
+      }
+    },
+    {
+      "name": "ViewModelHUD",
+      "enabled": false,
+      "x": 0.0,
+      "y": 30.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "scalez": 1.0,
+        "rotation": 0,
+        "offsety": -12.0,
+        "offsetz": 50.0
+      }
+    },
+    {
+      "name": "Watermark",
+      "enabled": true,
+      "x": 0.0,
+      "y": 0.0,
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "primary": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "version_mode": "GitHash",
+        "spacer": " "
+      }
+    },
+    {
+      "name": "Welcomer",
+      "enabled": true,
+      "x": 0.5,
+      "y": 0.0,
+      "horizontalAlignment": "MIDDLE",
+      "verticalAlignment": "TOP",
+      "settings": {
+        "user_color": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": true,
+          "value": {
+            "a": 255,
+            "r": 159,
+            "g": 99,
+            "b": 222
+          }
+        },
+        "before": "Welcome",
+        "after": ":3",
+        "override": true,
+        "username": "qweru"
+      }
+    },
+    {
+      "name": "XCarry",
+      "enabled": true,
+      "settings": {}
+    }
+  ]
+,
+  "server": "krcrystal"
+,
+  "pingRange": "100 - 301"
+,
+  "uploader": "800CreditScore_"
+,
+  "updated": "1756078596690"
+,
+  "version": "2.0.2-beta.surround"
+}
