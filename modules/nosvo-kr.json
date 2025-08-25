@@ -109,7 +109,7 @@
         },
         "fade_wait": 0,
         "render_text": false,
-        "target_range": 13,
+        "target_range": 8,
         "suicide_bind": 264,
         "no_eat_swap": false,
         "item_disable": false,
@@ -555,6 +555,20 @@
       }
     },
     {
+      "name": "DiscordRPC",
+      "enabled": true,
+      "settings": {
+        "update_interval": 50,
+        "mode": "Custom",
+        "state": "Busting All Over",
+        "details": "Doing Ur Mom",
+        "image_key": "https://media1.tenor.com/m/YdHckoIw7yAAAAAC/musashi.gif",
+        "image_text": "BETA",
+        "small_image_key": "https://media1.tenor.com/m/YsQCkuYzVnQAAAAC/spiral-gif-anime.gif",
+        "small_image_text": "2.0"
+      }
+    },
+    {
       "name": "Environment",
       "enabled": true,
       "settings": {
@@ -642,8 +656,8 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 165,
-            "g": 41,
+            "r": 41,
+            "g": 92,
             "b": 204
           }
         }
@@ -655,6 +669,11 @@
       "settings": {
         "fov_static": 150
       }
+    },
+    {
+      "name": "FakePlayer",
+      "enabled": true,
+      "settings": {}
     },
     {
       "name": "Font",
@@ -1231,7 +1250,7 @@
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1756092366616"
+  "updated": "1756094266247"
 ,
   "version": "2.0.2-beta.surround"
 }
