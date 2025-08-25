@@ -657,7 +657,7 @@
           "value": {
             "a": 125,
             "r": 41,
-            "g": 92,
+            "g": 200,
             "b": 204
           }
         }
@@ -669,11 +669,6 @@
       "settings": {
         "fov_static": 150
       }
-    },
-    {
-      "name": "FakePlayer",
-      "enabled": true,
-      "settings": {}
     },
     {
       "name": "Font",
@@ -1195,6 +1190,19 @@
       "settings": {}
     },
     {
+      "name": "ViewModel",
+      "enabled": true,
+      "settings": {
+        "no_down_animation": true,
+        "hand_sway": true,
+        "item_use_animation": false,
+        "main_y": -0.1,
+        "main_z": -0.15,
+        "off_y": -0.1,
+        "off_z": -0.15
+      }
+    },
+    {
       "name": "Watermark",
       "enabled": true,
       "x": 0.0,
@@ -1250,7 +1258,7 @@
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1756094266247"
+  "updated": "1756094735989"
 ,
   "version": "2.0.2-beta.surround"
 }
