@@ -68,7 +68,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "max_damage": 12,
         "ignore_if_pop": true,
@@ -78,10 +78,9 @@
         "armor_breaker": true,
         "durability": 5.0,
         "assume_broken": true,
-        "broken_ticks": 3,
+        "broken_ticks": 4,
         "swap_mode": "Silent",
         "place_range": 5.2,
-        "swing_place": false,
         "break_range": 5.2,
         "swing_break": false,
         "rotate": false,
@@ -202,7 +201,8 @@
       "enabled": true,
       "settings": {
         "ping": false,
-        "armor_spacing": 5.0
+        "armor_spacing": 5.0,
+        "armor_offset": -2.0
       }
     },
     {
@@ -656,9 +656,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 200,
-            "b": 204
+            "r": 204,
+            "g": 41,
+            "b": 126
           }
         }
       }
@@ -756,6 +756,7 @@
           }
         },
         "boxheight": 0.1,
+        "animate": false,
         "animation": "FadeIn"
       }
     },
@@ -936,6 +937,15 @@
             "b": 251
           }
         }
+      }
+    },
+    {
+      "name": "Phase",
+      "enabled": false,
+      "settings": {
+        "mode": "KrBurrow",
+        "burrow_delay": 3000,
+        "jump_toggle": true
       }
     },
     {
@@ -1193,13 +1203,22 @@
       "name": "ViewModel",
       "enabled": true,
       "settings": {
+        "separate_hands": false,
+        "swing_speed": 8,
         "no_down_animation": true,
         "hand_sway": true,
         "item_use_animation": false,
-        "main_y": -0.1,
-        "main_z": -0.15,
+        "main_scale_x": 1.85,
+        "main_scale_z": 3.0,
+        "main_y": -0.5,
+        "main_z": -0.2,
         "off_y": -0.1,
-        "off_z": -0.15
+        "off_z": -0.15,
+        "swing_mode": "Normal",
+        "main_progress": -1.0,
+        "off_progress": -1.0,
+        "right_x_degrees": -80.0,
+        "right_z_degrees": 0.0
       }
     },
     {
@@ -1258,7 +1277,7 @@
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1756094735989"
+  "updated": "1756104006539"
 ,
   "version": "2.0.2-beta.surround"
 }
