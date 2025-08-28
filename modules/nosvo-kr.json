@@ -76,7 +76,7 @@
         "ignore_if_pop": true,
         "min_ratio": 2.0,
         "no_suicide": false,
-        "health_factor": 2.0,
+        "health_factor": 1.2,
         "max_health": 12.0,
         "armor_breaker": true,
         "durability": 12.0,
@@ -87,13 +87,14 @@
         "break_range": 5.2,
         "max_attack": 3,
         "break_speed": 40.0,
+        "attack_sd": true,
         "rotate": false,
         "fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 33,
+            "a": 44,
             "r": 171,
             "g": 149,
             "b": 255
@@ -104,13 +105,16 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 225,
+            "a": 164,
             "r": 171,
             "g": 149,
             "b": 255
           }
         },
+        "fade": true,
         "fade_wait": 0,
+        "render_text": false,
+        "damage_mode": "Full",
         "target_range": 8,
         "suicide_bind": 264,
         "no_eat_swap": false,
@@ -118,6 +122,7 @@
         "item_disable": false,
         "count_range": 5,
         "packet_count": 3,
+        "tick_delay": 50,
         "t_packet_count": 3,
         "fast_break": true,
         "instant_replace": true,
@@ -137,6 +142,7 @@
       "enabled": true,
       "settings": {
         "delay": 0,
+        "replenish_ec": true,
         "threshold": 0.25
       }
     },
@@ -346,7 +352,7 @@
         "title_height": 12,
         "text_padding": 2,
         "render_icons": false,
-        "outline_width": 1.0,
+        "outline_width": 0.3,
         "animation_factor": 0.5,
         "module_height": 12,
         "module_spacing": 0,
@@ -380,7 +386,7 @@
           "noAlphaSync": true,
           "sync": false,
           "value": {
-            "a": 158,
+            "a": 170,
             "r": 0,
             "g": 0,
             "b": 0
@@ -391,10 +397,10 @@
           "noAlphaSync": false,
           "sync": false,
           "value": {
-            "a": 34,
-            "r": 30,
-            "g": 30,
-            "b": 35
+            "a": 41,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "setting_background": {
@@ -403,9 +409,9 @@
           "sync": false,
           "value": {
             "a": 36,
-            "r": 25,
-            "g": 25,
-            "b": 30
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "selection": {
@@ -413,7 +419,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 100,
+            "a": 45,
             "r": 171,
             "g": 149,
             "b": 255
@@ -435,7 +441,7 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 156,
+            "a": 171,
             "r": 171,
             "g": 149,
             "b": 255
@@ -461,6 +467,17 @@
             "r": 171,
             "g": 149,
             "b": 255
+          }
+        },
+        "scrollbar_track": {
+          "rainbow": false,
+          "noAlphaSync": false,
+          "sync": false,
+          "value": {
+            "a": 150,
+            "r": 0,
+            "g": 0,
+            "b": 0
           }
         },
         "scrollbar": {
@@ -845,9 +862,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 204,
-            "g": 41,
-            "b": 119
+            "r": 41,
+            "g": 173,
+            "b": 204
           }
         }
       }
@@ -879,6 +896,11 @@
           }
         }
       }
+    },
+    {
+      "name": "FakePlayer",
+      "enabled": true,
+      "settings": {}
     },
     {
       "name": "Font",
@@ -1267,6 +1289,7 @@
       "enabled": false,
       "settings": {
         "mode": "KrBurrow",
+        "count": 1,
         "burrow_delay": 5000,
         "jump_toggle": true
       }
@@ -1681,16 +1704,21 @@
         "override": true,
         "username": "nosvo"
       }
+    },
+    {
+      "name": "XCarry",
+      "enabled": true,
+      "settings": {}
     }
   ]
 ,
-  "server": "krcrystal-updated"
+  "server": "krcrystal-on-ez-mode"
 ,
-  "pingRange": "0 - 250"
+  "pingRange": ""
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1756347554640"
+  "updated": "1756352734647"
 ,
   "version": "2.0.3-the big Fix"
 }
