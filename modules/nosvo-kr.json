@@ -862,9 +862,9 @@
           "sync": false,
           "value": {
             "a": 125,
-            "r": 41,
-            "g": 173,
-            "b": 204
+            "r": 204,
+            "g": 41,
+            "b": 91
           }
         }
       }
@@ -896,11 +896,6 @@
           }
         }
       }
-    },
-    {
-      "name": "FakePlayer",
-      "enabled": true,
-      "settings": {}
     },
     {
       "name": "Font",
@@ -1714,11 +1709,11 @@
 ,
   "server": "krcrystal-on-ez-mode"
 ,
-  "pingRange": ""
+  "pingRange": "0 - 250"
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1756352734647"
+  "updated": "1756352782438"
 ,
   "version": "2.0.3-the big Fix"
 }
