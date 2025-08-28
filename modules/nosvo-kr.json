@@ -69,7 +69,7 @@
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 4,
         "max_damage": 12,
@@ -113,6 +113,7 @@
         },
         "fade": true,
         "fade_wait": 0,
+        "shrink": true,
         "render_text": false,
         "damage_mode": "Full",
         "target_range": 8,
@@ -863,8 +864,8 @@
           "value": {
             "a": 125,
             "r": 204,
-            "g": 41,
-            "b": 91
+            "g": 83,
+            "b": 41
           }
         }
       }
@@ -1246,7 +1247,7 @@
     },
     {
       "name": "PacketMine",
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "range": 5.2,
         "swap": "Silent",
@@ -1709,11 +1710,11 @@
 ,
   "server": "krcrystal-on-ez-mode"
 ,
-  "pingRange": "0 - 250"
+  "pingRange": ""
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1756352782438"
+  "updated": "1756355839103"
 ,
   "version": "2.0.3-the big Fix"
 }
