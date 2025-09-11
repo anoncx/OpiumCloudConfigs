@@ -27,9 +27,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "bracket_color": {
@@ -59,13 +59,12 @@
       "name": "AutoBowRelease",
       "enabled": true,
       "settings": {
-        "pull_ticks": 5,
-        "rotate": true
+        "pull_ticks": 5
       }
     },
     {
       "name": "AutoCrystal",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "min_damage": 3,
         "max_damage": 12,
@@ -92,10 +91,10 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 90,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "a": 88,
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "outline": {
@@ -103,12 +102,18 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "a": 223,
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
+        "fade": true,
+        "fade_time": 1000,
+        "fade_wait": 250,
+        "shrink": true,
+        "shrink_start": 0.1,
+        "shrink_end": 1.0,
         "render_text": false,
         "target_range": 16,
         "suicide_bind": 264,
@@ -151,6 +156,7 @@
       "name": "AutoTrap",
       "enabled": false,
       "settings": {
+        "strict_direction": true,
         "timeout": 50,
         "swap": "Silent",
         "reach": 6.0,
@@ -163,9 +169,9 @@
           "sync": true,
           "value": {
             "a": 80,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "outline": {
@@ -174,11 +180,14 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
+        "length": 350,
+        "start_size": 1.0,
+        "end_size": 0.1,
         "death_disable": true,
         "floor": false,
         "feet": true
@@ -264,9 +273,9 @@
           "sync": true,
           "value": {
             "a": 100,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "slider": {
@@ -275,9 +284,9 @@
           "sync": true,
           "value": {
             "a": 173,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "header": {
@@ -286,9 +295,9 @@
           "sync": true,
           "value": {
             "a": 86,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "borders": {
@@ -297,9 +306,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "enabled_state": {
@@ -308,9 +317,9 @@
           "sync": true,
           "value": {
             "a": 90,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "enabled_text": {
@@ -319,9 +328,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "disabled_text": {
@@ -341,9 +350,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "checkbox_fill": {
@@ -352,9 +361,9 @@
           "sync": true,
           "value": {
             "a": 180,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "indent_guide": {
@@ -363,9 +372,9 @@
           "sync": true,
           "value": {
             "a": 150,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "enabled_outline": {
@@ -374,9 +383,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -391,9 +400,9 @@
           "sync": false,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -413,9 +422,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -440,9 +449,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -454,6 +463,19 @@
         "particles": false,
         "ghost_effect": false,
         "bloom": false,
+        "bloom_color": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 180,
+            "r": 208,
+            "g": 230,
+            "b": 255
+          }
+        },
+        "effect_duration": 100,
+        "image": "OpiumLogo",
         "death_sound": "ZAP"
       }
     },
@@ -471,9 +493,16 @@
     },
     {
       "name": "DiscordRPC",
-      "enabled": false,
+      "enabled": true,
       "settings": {
-        "update_interval": 50
+        "update_interval": 100,
+        "mode": "Custom",
+        "state": "Busting All Over",
+        "details": "Doing Ur Mom",
+        "image_key": "https://media1.tenor.com/m/cj-OJrIVc-gAAAAd/obanai-obanai-iguro.gif",
+        "image_text": "Opium Beta",
+        "small_image_key": "https://i.pinimg.com/originals/ef/90/af/ef90afcc70e835f887d23afbfaf48327.gif",
+        "small_image_text": "2.0"
       }
     },
     {
@@ -487,9 +516,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "custom_time": true,
@@ -501,9 +530,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "color_2": {
@@ -525,9 +554,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -554,17 +583,12 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
-    },
-    {
-      "name": "FakePlayer",
-      "enabled": true,
-      "settings": {}
     },
     {
       "name": "Font",
@@ -618,9 +642,9 @@
           "sync": true,
           "value": {
             "a": 0,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "bedrock": {
@@ -629,9 +653,9 @@
           "sync": true,
           "value": {
             "a": 0,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "obsidian_outline": {
@@ -640,9 +664,9 @@
           "sync": true,
           "value": {
             "a": 116,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "bedrock_outline": {
@@ -651,9 +675,9 @@
           "sync": true,
           "value": {
             "a": 115,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "boxheight": 0.0
@@ -663,20 +687,22 @@
       "name": "HoleFill",
       "enabled": true,
       "settings": {
+        "strict_direction": true,
         "timeout": 50,
         "swap": "Silent",
         "reach": 6.0,
         "max/t": 2,
         "place_delay": 0.05,
+        "attempt_delay": 0,
         "fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
             "a": 80,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "outline": {
@@ -685,11 +711,14 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
+        "length": 350,
+        "start_size": 1.0,
+        "end_size": 0.1,
         "y_disable": false,
         "jump_disable": false,
         "step_disable": false,
@@ -723,9 +752,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "blur": false,
@@ -756,9 +785,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "bounce": true,
@@ -770,7 +799,8 @@
       "name": "KillAura",
       "enabled": true,
       "settings": {
-        "range": 6.0
+        "range": 6.0,
+        "rotation_mode": "Always"
       }
     },
     {
@@ -801,9 +831,9 @@
           "sync": true,
           "value": {
             "a": 85,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "culling": true,
@@ -880,7 +910,7 @@
       "name": "PacketExp",
       "enabled": false,
       "settings": {
-        "tick_max": 7.0,
+        "tick_max": 10.0,
         "auto_disable": false
       }
     },
@@ -899,9 +929,9 @@
           "sync": true,
           "value": {
             "a": 82,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "outline": {
@@ -910,9 +940,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -942,16 +972,16 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
     },
     {
       "name": "PlayerList",
-      "enabled": true,
+      "enabled": false,
       "x": 0.0,
       "y": 10.0,
       "horizontalAlignment": "LEFT",
@@ -963,9 +993,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "distance_color": {
@@ -996,9 +1026,9 @@
           "sync": true,
           "value": {
             "a": 216,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "glow": true,
@@ -1024,9 +1054,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -1043,7 +1073,6 @@
       "name": "Rotations",
       "enabled": false,
       "settings": {
-        "mode": "YawOnly",
         "keep_ticks": 3,
         "yaw_step": 180,
         "lerp_step": 1.0,
@@ -1065,9 +1094,9 @@
           "sync": true,
           "value": {
             "a": 80,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "outline": {
@@ -1076,9 +1105,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "floor": false
@@ -1088,17 +1117,18 @@
       "name": "Shaders",
       "enabled": false,
       "settings": {
-        "default_width": 15.0,
-        "default_quality": 3.0,
+        "shader": "Bloom",
+        "max_range": 64,
+        "default_quality": 0.0,
         "default_fill": {
           "rainbow": false,
           "noAlphaSync": true,
           "sync": true,
           "value": {
             "a": 85,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "default_outline": {
@@ -1106,10 +1136,34 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 0,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "a": 171,
+            "r": 208,
+            "g": 230,
+            "b": 255
+          }
+        },
+        "bloom_width": 4.2,
+        "bloom_quality": 6.0,
+        "bloom_fill": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 79,
+            "r": 208,
+            "g": 230,
+            "b": 255
+          }
+        },
+        "bloom_outline": {
+          "rainbow": false,
+          "noAlphaSync": true,
+          "sync": true,
+          "value": {
+            "a": 45,
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         }
       }
@@ -1133,11 +1187,15 @@
       "name": "SurroundRewrite",
       "enabled": false,
       "settings": {
+        "strict_direction": true,
         "timeout": 50,
         "swap": "Silent",
         "reach": 6.0,
         "max/t": 2,
         "place_delay": 0.05,
+        "attempt_delay": 0,
+        "no_block_check": true,
+        "crystal_updates": "Remove",
         "place_support": true,
         "fill": {
           "rainbow": false,
@@ -1145,9 +1203,9 @@
           "sync": true,
           "value": {
             "a": 89,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "outline": {
@@ -1155,12 +1213,15 @@
           "noAlphaSync": true,
           "sync": true,
           "value": {
-            "a": 250,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "a": 223,
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
+        "length": 350,
+        "start_size": 0.9,
+        "end_size": 0.1,
         "death_disable": true,
         "item_disable": true
       }
@@ -1196,9 +1257,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "health_gradient": false,
@@ -1208,9 +1269,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "armor_bar_high": {
@@ -1219,9 +1280,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "armor_gradient": false,
@@ -1243,9 +1304,9 @@
           "sync": true,
           "value": {
             "a": 200,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "startup_sound": false,
@@ -1305,9 +1366,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "version_mode": "GitHash"
@@ -1327,9 +1388,9 @@
           "sync": true,
           "value": {
             "a": 255,
-            "r": 175,
-            "g": 152,
-            "b": 253
+            "r": 208,
+            "g": 230,
+            "b": 255
           }
         },
         "override": true,
@@ -1349,7 +1410,7 @@
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1757550665502"
+  "updated": "1757575614202"
 ,
   "version": "2.0.3-the big Fix"
 }
