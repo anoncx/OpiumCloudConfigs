@@ -78,13 +78,12 @@
         "durability": 12.0,
         "assume_broken": true,
         "broken_ticks": 5,
-        "mine_sync": true,
         "swap_mode": "None",
         "swap_penalty": 0.0,
         "place_range": 6.0,
         "place_speed": 0.0,
-        "scan_range": 6,
-        "scan_range_y": 6,
+        "scan_range": 8,
+        "scan_range_y": 4,
         "break_range": 6.0,
         "max_attack": 3,
         "break_speed": 0.0,
@@ -135,6 +134,7 @@
       "name": "AutoReplenish",
       "enabled": true,
       "settings": {
+        "delay": 0,
         "threshold": 0.2
       }
     },
@@ -151,10 +151,10 @@
       "name": "AutoTrap",
       "enabled": false,
       "settings": {
-        "multi_rotate": true,
         "timeout": 50,
         "swap": "Silent",
         "reach": 6.0,
+        "max/t": 2,
         "attempt_delay": 0,
         "place_support": true,
         "fill": {
@@ -431,8 +431,8 @@
       "settings": {
         "rotation_speed": 0.3,
         "size": 0.7,
-        "up-down_height": 0.3,
-        "circle_rise": 0.7,
+        "circle_duration": 1500.0,
+        "circle_rise": 2.0,
         "circle_scale": 0.7,
         "circle_color": {
           "rainbow": false,
@@ -478,7 +478,7 @@
     },
     {
       "name": "Environment",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "modify_overworld_sky": true,
         "overworld_sky_color": {
@@ -560,6 +560,11 @@
           }
         }
       }
+    },
+    {
+      "name": "FakePlayer",
+      "enabled": true,
+      "settings": {}
     },
     {
       "name": "Font",
@@ -658,10 +663,10 @@
       "name": "HoleFill",
       "enabled": true,
       "settings": {
-        "multi_rotate": true,
         "timeout": 50,
         "swap": "Silent",
         "reach": 6.0,
+        "max/t": 2,
         "place_delay": 0.05,
         "fill": {
           "rainbow": false,
@@ -700,7 +705,6 @@
       "name": "Holes",
       "enabled": false,
       "settings": {
-        "scan_h": 5,
         "scan_v": 3,
         "scan_delay": 0.3
       }
@@ -868,6 +872,7 @@
       "settings": {
         "health": 16,
         "holehp": 3,
+        "item": "Crystal",
         "switchback": false
       }
     },
@@ -1038,14 +1043,12 @@
       "name": "Rotations",
       "enabled": false,
       "settings": {
-        "keep_ticks": 5,
+        "mode": "YawOnly",
+        "keep_ticks": 3,
         "yaw_step": 180,
         "lerp_step": 1.0,
         "multi_mode": "NCP",
-        "allowed_diff": 3,
-        "fix_movement": true,
-        "fix_interactions": true,
-        "fix_crosshair_target": true
+        "allowed_diff": 3
       }
     },
     {
@@ -1130,10 +1133,10 @@
       "name": "SurroundRewrite",
       "enabled": false,
       "settings": {
-        "multi_rotate": true,
         "timeout": 50,
         "swap": "Silent",
         "reach": 6.0,
+        "max/t": 2,
         "place_delay": 0.05,
         "place_support": true,
         "fill": {
@@ -1272,7 +1275,7 @@
     },
     {
       "name": "ViewModel",
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "swing_speed": 10,
         "no_down_animation": true,
@@ -1340,13 +1343,13 @@
     }
   ]
 ,
-  "server": "cc-"
+  "server": "cc"
 ,
   "pingRange": "0 - 180"
 ,
   "uploader": "SuperCreamyLoad"
 ,
-  "updated": "1757341304648"
+  "updated": "1757550665502"
 ,
   "version": "2.0.3-the big Fix"
 }
